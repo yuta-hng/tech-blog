@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+.env
+.venv/
+results/speech-*.json
+!google-cloud-speech-transcription/results/speech-20260911-100351.json
