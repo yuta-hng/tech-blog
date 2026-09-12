@@ -1,0 +1,7 @@
+.venv/
+.hf-cache/
+__pycache__/
+source/*.m4a
+source/*.flac
+source/*.json3
+source/*.vtt

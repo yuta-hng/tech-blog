@@ -1,0 +1,9 @@
+[project]
+name = "speech-to-text-vs-whisper"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+  "av==18.1.0",
+  "faster-whisper==1.2.0",
+  "requests==2.32.5",
+]
