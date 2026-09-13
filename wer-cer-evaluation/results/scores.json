@@ -1,0 +1,291 @@
+{
+  "source": "2026-09-11 Speech-to-Text V1 latest_long final measurement",
+  "normalization": {
+    "cer": "lowercase and keep only ASCII alphanumerics, kanji, hiragana, katakana, and prolonged sound marks",
+    "whitespace_wer": "JiWER default: split on ASCII spaces without replacing line breaks",
+    "linebreak_as_space_wer": "replace line breaks with ASCII spaces, then use JiWER default",
+    "sudachi_wer": "NFKC, lowercase, remove punctuation/symbol tokens, and tokenize with SudachiDict core surface forms"
+  },
+  "cases": [
+    {
+      "name": "clean_without_hints",
+      "audio": "clean",
+      "hints": false,
+      "scores": {
+        "raw_cer": {
+          "reference_characters": 375,
+          "hypothesis_characters": 193,
+          "substitutions": 60,
+          "deletions": 192,
+          "insertions": 10,
+          "hits": 123,
+          "cer": 0.6986666666666667
+        },
+        "normalized_cer": {
+          "reference_characters": 338,
+          "hypothesis_characters": 163,
+          "substitutions": 44,
+          "deletions": 175,
+          "insertions": 0,
+          "hits": 119,
+          "cer": 0.6479289940828402
+        },
+        "whitespace_wer": {
+          "reference_tokens": 6,
+          "hypothesis_tokens": 22,
+          "substitutions": 6,
+          "deletions": 0,
+          "insertions": 16,
+          "hits": 0,
+          "wer": 3.6666666666666665
+        },
+        "linebreak_as_space_wer": {
+          "reference_tokens": 14,
+          "hypothesis_tokens": 22,
+          "substitutions": 14,
+          "deletions": 0,
+          "insertions": 8,
+          "hits": 0,
+          "wer": 1.5714285714285714
+        },
+        "sudachi_a_wer": {
+          "reference_tokens": 159,
+          "hypothesis_tokens": 75,
+          "substitutions": 15,
+          "deletions": 84,
+          "insertions": 0,
+          "hits": 60,
+          "wer": 0.6226415094339622
+        },
+        "sudachi_b_wer": {
+          "reference_tokens": 157,
+          "hypothesis_tokens": 74,
+          "substitutions": 15,
+          "deletions": 83,
+          "insertions": 0,
+          "hits": 59,
+          "wer": 0.6242038216560509
+        },
+        "sudachi_c_wer": {
+          "reference_tokens": 156,
+          "hypothesis_tokens": 74,
+          "substitutions": 15,
+          "deletions": 83,
+          "insertions": 1,
+          "hits": 58,
+          "wer": 0.6346153846153846
+        }
+      }
+    },
+    {
+      "name": "clean_with_hints",
+      "audio": "clean",
+      "hints": true,
+      "scores": {
+        "raw_cer": {
+          "reference_characters": 375,
+          "hypothesis_characters": 359,
+          "substitutions": 82,
+          "deletions": 31,
+          "insertions": 15,
+          "hits": 262,
+          "cer": 0.3413333333333333
+        },
+        "normalized_cer": {
+          "reference_characters": 338,
+          "hypothesis_characters": 312,
+          "substitutions": 60,
+          "deletions": 26,
+          "insertions": 0,
+          "hits": 252,
+          "cer": 0.25443786982248523
+        },
+        "whitespace_wer": {
+          "reference_tokens": 6,
+          "hypothesis_tokens": 32,
+          "substitutions": 6,
+          "deletions": 0,
+          "insertions": 26,
+          "hits": 0,
+          "wer": 5.333333333333333
+        },
+        "linebreak_as_space_wer": {
+          "reference_tokens": 14,
+          "hypothesis_tokens": 32,
+          "substitutions": 14,
+          "deletions": 0,
+          "insertions": 18,
+          "hits": 0,
+          "wer": 2.2857142857142856
+        },
+        "sudachi_a_wer": {
+          "reference_tokens": 159,
+          "hypothesis_tokens": 158,
+          "substitutions": 20,
+          "deletions": 2,
+          "insertions": 1,
+          "hits": 137,
+          "wer": 0.14465408805031446
+        },
+        "sudachi_b_wer": {
+          "reference_tokens": 157,
+          "hypothesis_tokens": 156,
+          "substitutions": 19,
+          "deletions": 2,
+          "insertions": 1,
+          "hits": 136,
+          "wer": 0.14012738853503184
+        },
+        "sudachi_c_wer": {
+          "reference_tokens": 156,
+          "hypothesis_tokens": 156,
+          "substitutions": 19,
+          "deletions": 2,
+          "insertions": 2,
+          "hits": 135,
+          "wer": 0.14743589743589744
+        }
+      }
+    },
+    {
+      "name": "noise_12db_without_hints",
+      "audio": "noise_12db",
+      "hints": false,
+      "scores": {
+        "raw_cer": {
+          "reference_characters": 375,
+          "hypothesis_characters": 189,
+          "substitutions": 56,
+          "deletions": 196,
+          "insertions": 10,
+          "hits": 123,
+          "cer": 0.6986666666666667
+        },
+        "normalized_cer": {
+          "reference_characters": 338,
+          "hypothesis_characters": 161,
+          "substitutions": 43,
+          "deletions": 177,
+          "insertions": 0,
+          "hits": 118,
+          "cer": 0.650887573964497
+        },
+        "whitespace_wer": {
+          "reference_tokens": 6,
+          "hypothesis_tokens": 20,
+          "substitutions": 6,
+          "deletions": 0,
+          "insertions": 14,
+          "hits": 0,
+          "wer": 3.3333333333333335
+        },
+        "linebreak_as_space_wer": {
+          "reference_tokens": 14,
+          "hypothesis_tokens": 20,
+          "substitutions": 14,
+          "deletions": 0,
+          "insertions": 6,
+          "hits": 0,
+          "wer": 1.4285714285714286
+        },
+        "sudachi_a_wer": {
+          "reference_tokens": 159,
+          "hypothesis_tokens": 74,
+          "substitutions": 13,
+          "deletions": 86,
+          "insertions": 1,
+          "hits": 60,
+          "wer": 0.6289308176100629
+        },
+        "sudachi_b_wer": {
+          "reference_tokens": 157,
+          "hypothesis_tokens": 73,
+          "substitutions": 13,
+          "deletions": 85,
+          "insertions": 1,
+          "hits": 59,
+          "wer": 0.6305732484076433
+        },
+        "sudachi_c_wer": {
+          "reference_tokens": 156,
+          "hypothesis_tokens": 73,
+          "substitutions": 13,
+          "deletions": 85,
+          "insertions": 2,
+          "hits": 58,
+          "wer": 0.6410256410256411
+        }
+      }
+    },
+    {
+      "name": "noise_12db_with_hints",
+      "audio": "noise_12db",
+      "hints": true,
+      "scores": {
+        "raw_cer": {
+          "reference_characters": 375,
+          "hypothesis_characters": 362,
+          "substitutions": 79,
+          "deletions": 30,
+          "insertions": 17,
+          "hits": 266,
+          "cer": 0.336
+        },
+        "normalized_cer": {
+          "reference_characters": 338,
+          "hypothesis_characters": 314,
+          "substitutions": 56,
+          "deletions": 25,
+          "insertions": 1,
+          "hits": 257,
+          "cer": 0.24260355029585798
+        },
+        "whitespace_wer": {
+          "reference_tokens": 6,
+          "hypothesis_tokens": 33,
+          "substitutions": 6,
+          "deletions": 0,
+          "insertions": 27,
+          "hits": 0,
+          "wer": 5.5
+        },
+        "linebreak_as_space_wer": {
+          "reference_tokens": 14,
+          "hypothesis_tokens": 33,
+          "substitutions": 14,
+          "deletions": 0,
+          "insertions": 19,
+          "hits": 0,
+          "wer": 2.357142857142857
+        },
+        "sudachi_a_wer": {
+          "reference_tokens": 159,
+          "hypothesis_tokens": 160,
+          "substitutions": 21,
+          "deletions": 2,
+          "insertions": 3,
+          "hits": 136,
+          "wer": 0.16352201257861634
+        },
+        "sudachi_b_wer": {
+          "reference_tokens": 157,
+          "hypothesis_tokens": 158,
+          "substitutions": 20,
+          "deletions": 2,
+          "insertions": 3,
+          "hits": 135,
+          "wer": 0.1592356687898089
+        },
+        "sudachi_c_wer": {
+          "reference_tokens": 156,
+          "hypothesis_tokens": 158,
+          "substitutions": 20,
+          "deletions": 2,
+          "insertions": 4,
+          "hits": 134,
+          "wer": 0.16666666666666666
+        }
+      }
+    }
+  ]
+}

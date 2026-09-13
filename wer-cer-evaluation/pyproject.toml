@@ -1,0 +1,9 @@
+[project]
+name = "wer-cer-evaluation"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "jiwer==4.0.0",
+    "sudachidict-core==20250825",
+    "sudachipy==0.6.10",
+]
