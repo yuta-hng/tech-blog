@@ -1,0 +1,59 @@
+{
+  "metric_type": "run.googleapis.com/container/instance_count",
+  "resource_type": "cloud_run_revision",
+  "alignment_period_seconds": 60,
+  "per_series_aligner": "ALIGN_MAX",
+  "series_selector": "metric.labels.state=active",
+  "export_note": "Cloud Monitoring APIの応答からactive系列だけを残し、project_idとプロジェクト番号を含むURLを除外した公開用データです。idle系列の値はすべて0でした。",
+  "series": [
+    {
+      "concurrency": 1,
+      "revision_name": "cloud-run-concurrency-test-00001-8sv",
+      "state": "active",
+      "query_interval": {
+        "start": "2026-09-14T08:08:00Z",
+        "end": "2026-09-14T08:15:00Z"
+      },
+      "points": [
+        {
+          "timestamp": "2026-09-14T08:11:00Z",
+          "instance_count": 7
+        },
+        {
+          "timestamp": "2026-09-14T08:12:00Z",
+          "instance_count": 3
+        }
+      ]
+    },
+    {
+      "concurrency": 20,
+      "revision_name": "cloud-run-concurrency-test-00002-t48",
+      "state": "active",
+      "query_interval": {
+        "start": "2026-09-14T08:08:00Z",
+        "end": "2026-09-14T08:15:00Z"
+      },
+      "points": [
+        {
+          "timestamp": "2026-09-14T08:12:00Z",
+          "instance_count": 5
+        }
+      ]
+    },
+    {
+      "concurrency": 80,
+      "revision_name": "cloud-run-concurrency-test-00003-br9",
+      "state": "active",
+      "query_interval": {
+        "start": "2026-09-14T08:11:00Z",
+        "end": "2026-09-14T08:17:00Z"
+      },
+      "points": [
+        {
+          "timestamp": "2026-09-14T08:13:00Z",
+          "instance_count": 2
+        }
+      ]
+    }
+  ]
+}

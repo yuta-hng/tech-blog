@@ -1,0 +1,58 @@
+{
+  "label": "concurrency-20",
+  "url": "https://<SERVICE_URL>/?work_ms=100",
+  "measured_at": "2026-09-14T17:11:34+0900",
+  "runs": [
+    {
+      "request_count": 1000,
+      "clients": 100,
+      "duration_seconds": 3.972,
+      "requests_per_second": 251.784,
+      "success_rate_percent": 100.0,
+      "status_counts": {
+        "200": 1000
+      },
+      "latency_ms": {
+        "mean": 307.795,
+        "p50": 297.907,
+        "p95": 359.988,
+        "p99": 389.285,
+        "max": 1332.984
+      }
+    },
+    {
+      "request_count": 1000,
+      "clients": 100,
+      "duration_seconds": 3.74,
+      "requests_per_second": 267.398,
+      "success_rate_percent": 100.0,
+      "status_counts": {
+        "200": 1000
+      },
+      "latency_ms": {
+        "mean": 294.14,
+        "p50": 277.298,
+        "p95": 399.064,
+        "p99": 426.763,
+        "max": 1332.702
+      }
+    },
+    {
+      "request_count": 1000,
+      "clients": 100,
+      "duration_seconds": 3.824,
+      "requests_per_second": 261.537,
+      "success_rate_percent": 100.0,
+      "status_counts": {
+        "200": 1000
+      },
+      "latency_ms": {
+        "mean": 290.496,
+        "p50": 274.827,
+        "p95": 349.535,
+        "p99": 399.241,
+        "max": 1332.821
+      }
+    }
+  ]
+}
