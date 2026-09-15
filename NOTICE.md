@@ -11,6 +11,7 @@ MIT Licenseは、このリポジトリのソースコードへ適用します。
 - `wer-cer-evaluation/cases.json` に含まれる正解文と文字起こし結果
 - `wer-cer-evaluation/results/` に含まれる集計結果
 - `cloud-run-concurrency-load-test/results/` に含まれる負荷試験とCloud Monitoringの結果
+- `cloud-run-cold-start/results/` に含まれる測定結果と匿名化済みのログ確認記録
 
 合成音声はGemini 2.5 Flash Preview TTSで生成しました。
 再利用する場合は、Googleの利用規約と適用される条件を確認してください。

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "source": "Cloud Logging request logs",
+  "window_start": "2026-09-15T13:05:20Z",
+  "window_end": "2026-09-15T13:26:40Z",
+  "targets": [
+    {
+      "label": "trial-1",
+      "root_200_count": 2,
+      "favicon_404_count": 2,
+      "first_request_at": "2026-09-15T13:05:32.277549Z",
+      "last_request_at": "2026-09-15T13:05:32.714802Z"
+    },
+    {
+      "label": "trial-2",
+      "root_200_count": 2,
+      "favicon_404_count": 2,
+      "first_request_at": "2026-09-15T13:06:51.698598Z",
+      "last_request_at": "2026-09-15T13:06:52.561208Z"
+    },
+    {
+      "label": "trial-3",
+      "root_200_count": 2,
+      "favicon_404_count": 2,
+      "first_request_at": "2026-09-15T13:06:07.271283Z",
+      "last_request_at": "2026-09-15T13:06:07.787331Z"
+    }
+  ],
+  "user_agent_summary": "Chrome on Windows",
+  "notes": [
+    "Service URLs, IP addresses, project identifiers, trace identifiers, and full user-agent strings are omitted.",
+    "The browser-like accesses occurred immediately after deployment and before the 20-minute idle window.",
+    "Attribution to a link preview is an inference from timing and user-agent data, not a directly observed fact."
+  ]
+}

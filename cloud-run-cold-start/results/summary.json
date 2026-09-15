@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "run_id": "20260915-cold-start-01",
+  "groups": {
+    "min-0": {
+      "service_count": 3,
+      "first": {
+        "valid_service_count": 3,
+        "excluded_service_count": 0,
+        "outcome_counts": {
+          "valid": 3
+        },
+        "client_latency_ms": {
+          "count": 3,
+          "median": 1237.081,
+          "min": 1110.483,
+          "max": 1715.199
+        },
+        "app_uptime_ms": {
+          "count": 3,
+          "median": 8.178,
+          "min": 7.741,
+          "max": 9.211
+        }
+      },
+      "warm": {
+        "complete_service_count": 3,
+        "incomplete_service_count": 0,
+        "request_count_in_complete_services": 15,
+        "outcome_counts": {
+          "valid": 15
+        },
+        "per_service_median_client_latency_ms": {
+          "count": 3,
+          "median": 111.467,
+          "min": 110.325,
+          "max": 111.923
+        }
+      }
+    },
+    "min-1": {
+      "service_count": 3,
+      "first": {
+        "valid_service_count": 3,
+        "excluded_service_count": 0,
+        "outcome_counts": {
+          "valid": 3
+        },
+        "client_latency_ms": {
+          "count": 3,
+          "median": 158.592,
+          "min": 152.54,
+          "max": 211.941
+        },
+        "app_uptime_ms": {
+          "count": 3,
+          "median": 1268625.008,
+          "min": 1253801.927,
+          "max": 1279922.386
+        }
+      },
+      "warm": {
+        "complete_service_count": 3,
+        "incomplete_service_count": 0,
+        "request_count_in_complete_services": 15,
+        "outcome_counts": {
+          "valid": 15
+        },
+        "per_service_median_client_latency_ms": {
+          "count": 3,
+          "median": 109.127,
+          "min": 102.047,
+          "max": 110.33
+        }
+      }
+    }
+  },
+  "services": [
+    {
+      "group": "min-0",
+      "label": "trial-1",
+      "first": {
+        "valid": true,
+        "outcome": "valid",
+        "observed_state": "new_process",
+        "client_latency_ms": 1715.199,
+        "http_status": 200,
+        "app_uptime_ms": 8.178,
+        "request_index": 1
+      },
+      "warm": {
+        "complete": true,
+        "expected_request_count": 5,
+        "valid_request_count": 5,
+        "outcome_counts": {
+          "valid": 5
+        },
+        "client_latency_ms": {
+          "count": 5,
+          "median": 111.923,
+          "min": 102.139,
+          "max": 114.503
+        }
+      }
+    },
+    {
+      "group": "min-1",
+      "label": "trial-1",
+      "first": {
+        "valid": true,
+        "outcome": "valid",
+        "observed_state": "prestarted_process",
+        "client_latency_ms": 152.54,
+        "http_status": 200,
+        "app_uptime_ms": 1279922.386,
+        "request_index": 3
+      },
+      "warm": {
+        "complete": true,
+        "expected_request_count": 5,
+        "valid_request_count": 5,
+        "outcome_counts": {
+          "valid": 5
+        },
+        "client_latency_ms": {
+          "count": 5,
+          "median": 102.047,
+          "min": 99.085,
+          "max": 103.183
+        }
+      }
+    },
+    {
+      "group": "min-0",
+      "label": "trial-2",
+      "first": {
+        "valid": true,
+        "outcome": "valid",
+        "observed_state": "new_process",
+        "client_latency_ms": 1237.081,
+        "http_status": 200,
+        "app_uptime_ms": 7.741,
+        "request_index": 1
+      },
+      "warm": {
+        "complete": true,
+        "expected_request_count": 5,
+        "valid_request_count": 5,
+        "outcome_counts": {
+          "valid": 5
+        },
+        "client_latency_ms": {
+          "count": 5,
+          "median": 110.325,
+          "min": 99.179,
+          "max": 119.21
+        }
+      }
+    },
+    {
+      "group": "min-1",
+      "label": "trial-2",
+      "first": {
+        "valid": true,
+        "outcome": "valid",
+        "observed_state": "prestarted_process",
+        "client_latency_ms": 158.592,
+        "http_status": 200,
+        "app_uptime_ms": 1268625.008,
+        "request_index": 3
+      },
+      "warm": {
+        "complete": true,
+        "expected_request_count": 5,
+        "valid_request_count": 5,
+        "outcome_counts": {
+          "valid": 5
+        },
+        "client_latency_ms": {
+          "count": 5,
+          "median": 109.127,
+          "min": 99.06,
+          "max": 110.139
+        }
+      }
+    },
+    {
+      "group": "min-0",
+      "label": "trial-3",
+      "first": {
+        "valid": true,
+        "outcome": "valid",
+        "observed_state": "new_process",
+        "client_latency_ms": 1110.483,
+        "http_status": 200,
+        "app_uptime_ms": 9.211,
+        "request_index": 1
+      },
+      "warm": {
+        "complete": true,
+        "expected_request_count": 5,
+        "valid_request_count": 5,
+        "outcome_counts": {
+          "valid": 5
+        },
+        "client_latency_ms": {
+          "count": 5,
+          "median": 111.467,
+          "min": 103.029,
+          "max": 142.816
+        }
+      }
+    },
+    {
+      "group": "min-1",
+      "label": "trial-3",
+      "first": {
+        "valid": true,
+        "outcome": "valid",
+        "observed_state": "prestarted_process",
+        "client_latency_ms": 211.941,
+        "http_status": 200,
+        "app_uptime_ms": 1253801.927,
+        "request_index": 3
+      },
+      "warm": {
+        "complete": true,
+        "expected_request_count": 5,
+        "valid_request_count": 5,
+        "outcome_counts": {
+          "valid": 5
+        },
+        "client_latency_ms": {
+          "count": 5,
+          "median": 110.33,
+          "min": 98.731,
+          "max": 113.301
+        }
+      }
+    }
+  ]
+}

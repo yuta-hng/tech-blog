@@ -1,0 +1,51 @@
+{
+  "measurement_date": "2026-09-15",
+  "run_id": "20260915-cold-start-01",
+  "region": "asia-northeast1",
+  "google_cloud_sdk": "583.0.0",
+  "execution_environment": "gen2",
+  "billing": "request-based",
+  "cpu": "1 vCPU",
+  "memory": "512 MiB",
+  "concurrency": 1,
+  "maximum_instances": 1,
+  "startup_cpu_boost": true,
+  "groups": {
+    "min-0": {
+      "minimum_instances": 0,
+      "service_count": 3
+    },
+    "min-1": {
+      "minimum_instances": 1,
+      "service_count": 3
+    }
+  },
+  "container_image_digest": "sha256:20cc5bd5c8382395744348a99948714be8a44f6b8b10e0b4c4944beb80f43daa",
+  "deployed_source_sha256": {
+    "app.py": "7f74ff3cb274cec21aa3d67b52c8aaf448a63758c2aafabfa68bd0b0814b85d4",
+    "requirements.txt": "565f15636496b14157b0772ea7c96ce08e35afc333dfa12399a415e8c0152223",
+    "Dockerfile": "227e287536f2b71ae133243e2b2fca4cbfe63514e1165d2fde09ead1a96b7f39"
+  },
+  "measurement_time_client_sha256": {
+    "measure.py": "b78326f0afdd0f384c89ad3eb45bd254374ab3cbe653d0c6283cf7e3942149e7"
+  },
+  "published_analysis_source_sha256": {
+    "measure.py": "92d4f2b1909f51f2c28e0b4f66d9c290d12ab209fd8dab46c03d19026e5958ec",
+    "reclassify.py": "db46d67fbea8ec54be8d2cb781c6a5198ca8a273ec7775ea49547842cfcc940b",
+    "summarize.py": "04e6c4f189d234588ed2c459984f76777533c455cd61a07f902287f1104dd6ec"
+  },
+  "provenance_notes": [
+    "The published measure.py contains post-measurement classification and error-handling fixes.",
+    "Only the SHA-256 of the measurement-time measure.py was retained; that exact source file was not retained.",
+    "The raw measurements preserve the original observed_state values produced by the measurement-time client.",
+    "The base image and transitive Python dependencies were not locked by digest, so the measured container cannot be rebuilt bit-for-bit from the public files."
+  ],
+  "application": {
+    "python": "3.12",
+    "flask": "3.1.2",
+    "gunicorn": "23.0.0",
+    "gunicorn_workers": 1,
+    "gunicorn_threads": 1,
+    "gunicorn_timeout_seconds": 30
+  }
+}

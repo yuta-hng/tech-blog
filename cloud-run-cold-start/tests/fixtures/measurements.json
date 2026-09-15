@@ -1,0 +1,477 @@
+{
+  "schema_version": 2,
+  "run_id": "fixture-run",
+  "settings": {
+    "warm_request_count_per_service": 5
+  },
+  "targets": [
+    {
+      "group": "min-0",
+      "label": "trial-1",
+      "requests": [
+        {
+          "phase": "first_after_idle",
+          "observed_state": "new_process",
+          "client_latency_ms": 1000,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000001",
+            "app_uptime_ms": 50,
+            "request_index": 1
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 100,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000001",
+            "app_uptime_ms": 150,
+            "request_index": 2
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 105,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000001",
+            "app_uptime_ms": 250,
+            "request_index": 3
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 95,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000001",
+            "app_uptime_ms": 350,
+            "request_index": 4
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 110,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000001",
+            "app_uptime_ms": 450,
+            "request_index": 5
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 90,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000001",
+            "app_uptime_ms": 550,
+            "request_index": 6
+          }
+        }
+      ]
+    },
+    {
+      "group": "min-0",
+      "label": "trial-2",
+      "requests": [
+        {
+          "phase": "first_after_idle",
+          "observed_state": "new_process",
+          "client_latency_ms": 1200,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000002",
+            "app_uptime_ms": 60,
+            "request_index": 1
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 110,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000002",
+            "app_uptime_ms": 160,
+            "request_index": 2
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 115,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000002",
+            "app_uptime_ms": 260,
+            "request_index": 3
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 105,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000002",
+            "app_uptime_ms": 360,
+            "request_index": 4
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 120,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000002",
+            "app_uptime_ms": 460,
+            "request_index": 5
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 100,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000002",
+            "app_uptime_ms": 560,
+            "request_index": 6
+          }
+        }
+      ]
+    },
+    {
+      "group": "min-0",
+      "label": "trial-3",
+      "requests": [
+        {
+          "phase": "first_after_idle",
+          "observed_state": "new_process",
+          "client_latency_ms": 800,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000003",
+            "app_uptime_ms": 40,
+            "request_index": 1
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 90,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000003",
+            "app_uptime_ms": 140,
+            "request_index": 2
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 95,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000003",
+            "app_uptime_ms": 240,
+            "request_index": 3
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 85,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000003",
+            "app_uptime_ms": 340,
+            "request_index": 4
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 100,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000003",
+            "app_uptime_ms": 440,
+            "request_index": 5
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 80,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000003",
+            "app_uptime_ms": 540,
+            "request_index": 6
+          }
+        }
+      ]
+    },
+    {
+      "group": "min-1",
+      "label": "trial-1",
+      "requests": [
+        {
+          "phase": "first_after_idle",
+          "observed_state": "prestarted_process",
+          "client_latency_ms": 120,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000004",
+            "app_uptime_ms": 1200000,
+            "request_index": 1
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 80,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000004",
+            "app_uptime_ms": 1200100,
+            "request_index": 2
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 85,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000004",
+            "app_uptime_ms": 1200200,
+            "request_index": 3
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 75,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000004",
+            "app_uptime_ms": 1200300,
+            "request_index": 4
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 90,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000004",
+            "app_uptime_ms": 1200400,
+            "request_index": 5
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 70,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000004",
+            "app_uptime_ms": 1200500,
+            "request_index": 6
+          }
+        }
+      ]
+    },
+    {
+      "group": "min-1",
+      "label": "trial-2",
+      "requests": [
+        {
+          "phase": "first_after_idle",
+          "observed_state": "prestarted_process",
+          "client_latency_ms": 100,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000005",
+            "app_uptime_ms": 1200010,
+            "request_index": 1
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 70,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000005",
+            "app_uptime_ms": 1200110,
+            "request_index": 2
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 75,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000005",
+            "app_uptime_ms": 1200210,
+            "request_index": 3
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 65,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000005",
+            "app_uptime_ms": 1200310,
+            "request_index": 4
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 80,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000005",
+            "app_uptime_ms": 1200410,
+            "request_index": 5
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 60,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000005",
+            "app_uptime_ms": 1200510,
+            "request_index": 6
+          }
+        }
+      ]
+    },
+    {
+      "group": "min-1",
+      "label": "trial-3",
+      "requests": [
+        {
+          "phase": "first_after_idle",
+          "observed_state": "prestarted_process",
+          "client_latency_ms": 110,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000006",
+            "app_uptime_ms": 1200020,
+            "request_index": 1
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 90,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000006",
+            "app_uptime_ms": 1200120,
+            "request_index": 2
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 95,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000006",
+            "app_uptime_ms": 1200220,
+            "request_index": 3
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 85,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000006",
+            "app_uptime_ms": 1200320,
+            "request_index": 4
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 100,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000006",
+            "app_uptime_ms": 1200420,
+            "request_index": 5
+          }
+        },
+        {
+          "phase": "warm",
+          "observed_state": "same_process",
+          "client_latency_ms": 80,
+          "response": {
+            "ok": true,
+            "app_initialized_at": "2026-09-15T00:00:00+00:00",
+            "process_id": "00000000000000000000000000000006",
+            "app_uptime_ms": 1200520,
+            "request_index": 6
+          }
+        }
+      ]
+    }
+  ]
+}
