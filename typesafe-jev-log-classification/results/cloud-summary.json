@@ -1,0 +1,101 @@
+{
+  "benchmark_file": "cloud-benchmark-20260920-142504.json",
+  "requests": 183,
+  "successes": 183,
+  "failures": 0,
+  "models": [
+    "jev-1.13.0"
+  ],
+  "classification": {
+    "n": 30,
+    "matches": 30,
+    "groups": {
+      "database": {
+        "n": 5,
+        "matches": 5,
+        "confidence_min": 1.0,
+        "confidence_max": 1.0
+      },
+      "dns": {
+        "n": 5,
+        "matches": 5,
+        "confidence_min": 0.99,
+        "confidence_max": 0.99
+      },
+      "iam": {
+        "n": 5,
+        "matches": 5,
+        "confidence_min": 0.98,
+        "confidence_max": 0.99
+      },
+      "timeout": {
+        "n": 5,
+        "matches": 5,
+        "confidence_min": 0.5,
+        "confidence_max": 0.64
+      },
+      "oom": {
+        "n": 5,
+        "matches": 5,
+        "confidence_min": 0.99,
+        "confidence_max": 0.99
+      },
+      "normal": {
+        "n": 5,
+        "matches": 5,
+        "confidence_min": 1.0,
+        "confidence_max": 1.0
+      }
+    },
+    "routes": {
+      "human_review": 25,
+      "record_only": 5
+    }
+  },
+  "latency": {
+    "1": {
+      "n": 50,
+      "median_ms": 218.47024149997196,
+      "p95_ms": 278.22855900012655,
+      "min_ms": 169.5015919999605,
+      "max_ms": 404.6582590003709
+    },
+    "3": {
+      "n": 50,
+      "median_ms": 215.27283399996122,
+      "p95_ms": 273.79163599971434,
+      "min_ms": 174.7309550000864,
+      "max_ms": 287.75041500011866
+    },
+    "10": {
+      "n": 50,
+      "median_ms": 214.30630299983022,
+      "p95_ms": 262.0250869999836,
+      "min_ms": 172.6571940002941,
+      "max_ms": 278.2711590002691
+    }
+  },
+  "network_median_ms": {
+    "dns_ms": 0.5721949999042408,
+    "tcp_ms": 117.26529400016261,
+    "tls_ms": 120.87984649997452
+  },
+  "startup": {
+    "count": 1,
+    "mean_ms": 834.81
+  },
+  "cases": {
+    "count": 30,
+    "unique_states": 10,
+    "min_chars": 40,
+    "median_chars": 261.0,
+    "max_chars": 428,
+    "sha256": "0c0b63d59a6f7e72360dde0ca1a9c1c1d8a42277eaddb6990e45df7fa13fd65d"
+  },
+  "input_tokens": {
+    "main": 115424,
+    "smoke": 2292,
+    "cloud_total": 117716
+  },
+  "estimated_cloud_api_usd_at_0_042_per_million": 0.004944072
+}

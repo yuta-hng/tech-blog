@@ -1,0 +1,294 @@
+{
+  "status": 200,
+  "elapsed_ms": 3915.0193659997967,
+  "body": {
+    "network_baseline": [
+      {
+        "dns_ms": 9.586875999957556,
+        "tcp_ms": 117.77566499995373,
+        "tls_ms": 122.00391699980173
+      },
+      {
+        "dns_ms": 0.6712099998367194,
+        "tcp_ms": 117.60132500012332,
+        "tls_ms": 119.62625500018476
+      },
+      {
+        "dns_ms": 0.5872310002814629,
+        "tcp_ms": 117.12511299992912,
+        "tls_ms": 119.79143600001407
+      },
+      {
+        "dns_ms": 0.5172609999135602,
+        "tcp_ms": 117.69344399999682,
+        "tls_ms": 121.18109600032767
+      },
+      {
+        "dns_ms": 0.528561000010086,
+        "tcp_ms": 118.42672500006302,
+        "tls_ms": 120.12938499992742
+      },
+      {
+        "dns_ms": 0.511930000357097,
+        "tcp_ms": 122.92502799982685,
+        "tls_ms": 124.17319899986978
+      },
+      {
+        "dns_ms": 0.6591999999727705,
+        "tcp_ms": 116.77141399968605,
+        "tls_ms": 121.31297600035396
+      },
+      {
+        "dns_ms": 0.6572409997716022,
+        "tcp_ms": 119.52033500028847,
+        "tls_ms": 124.95134999971924
+      },
+      {
+        "dns_ms": 1.5461410002899356,
+        "tcp_ms": 116.81163399998695,
+        "tls_ms": 119.36027499996271
+      },
+      {
+        "dns_ms": 0.5190100000618258,
+        "tcp_ms": 117.97059499986062,
+        "tls_ms": 121.35353700023188
+      }
+    ],
+    "environment": {
+      "region_configured": "asia-northeast1",
+      "service": "jev-lab-0920-eval",
+      "revision": "jev-lab-0920-eval-00001-vn6",
+      "python": "3.12.14",
+      "boot_id": "154879269f15440b9e5a00cd7858b576",
+      "process_age_seconds": 26.121544094
+    },
+    "benchmark_state_chars": 41,
+    "rows": [
+      {
+        "at": "2026-09-20T14:22:03.781802+00:00",
+        "phase": "warmup",
+        "case_id": "smoke",
+        "question_count": 1,
+        "ok": true,
+        "status": 200,
+        "elapsed_ms": 512.3916759998792,
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "category": {
+              "type": "choice",
+              "choice": "normal",
+              "confidence": 1.0,
+              "probabilities": {
+                "database_error": 0.0,
+                "application_error": 0.0,
+                "authentication_error": 0.0,
+                "network_error": 0.0,
+                "normal": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 447,
+            "output_tokens": 56
+          }
+        }
+      },
+      {
+        "at": "2026-09-20T14:22:04.294361+00:00",
+        "phase": "warmup",
+        "case_id": "smoke",
+        "question_count": 3,
+        "ok": true,
+        "status": 200,
+        "elapsed_ms": 220.66963799989026,
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "category": {
+              "type": "choice",
+              "choice": "normal",
+              "confidence": 1.0,
+              "probabilities": {
+                "normal": 1.0,
+                "database_error": 0.0,
+                "network_error": 0.0,
+                "application_error": 0.0,
+                "authentication_error": 0.0
+              }
+            },
+            "severity": {
+              "type": "score",
+              "score": 0.0,
+              "confidence": 1.0,
+              "legend": {
+                "0": "A successful operation with no error or user impact.",
+                "1": "An individual request failed or was rejected; no evidence of wider outage or data loss.",
+                "2": "Repeated failures or an unavailable dependency disrupt multiple requests.",
+                "3": "Explicit evidence of a service-wide outage, data loss, or an active security breach."
+              },
+              "probabilities": {
+                "0": 1.0,
+                "1": 0.0,
+                "2": 0.0,
+                "3": 0.0
+              }
+            },
+            "needs_human_review": {
+              "type": "noul",
+              "noul": 0.03
+            }
+          },
+          "usage": {
+            "input_tokens": 577,
+            "output_tokens": 89
+          }
+        },
+        "route": "record_only"
+      },
+      {
+        "at": "2026-09-20T14:22:04.515163+00:00",
+        "phase": "warmup",
+        "case_id": "smoke",
+        "question_count": 10,
+        "ok": true,
+        "status": 200,
+        "elapsed_ms": 213.21743300040907,
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "category": {
+              "type": "choice",
+              "choice": "normal",
+              "confidence": 1.0,
+              "probabilities": {
+                "authentication_error": 0.0,
+                "normal": 1.0,
+                "application_error": 0.0,
+                "network_error": 0.0,
+                "database_error": 0.0
+              }
+            },
+            "severity": {
+              "type": "score",
+              "score": 0.0,
+              "confidence": 1.0,
+              "legend": {
+                "0": "A successful operation with no error or user impact.",
+                "1": "An individual request failed or was rejected; no evidence of wider outage or data loss.",
+                "2": "Repeated failures or an unavailable dependency disrupt multiple requests.",
+                "3": "Explicit evidence of a service-wide outage, data loss, or an active security breach."
+              },
+              "probabilities": {
+                "0": 1.0,
+                "1": 0.0,
+                "2": 0.0,
+                "3": 0.0
+              }
+            },
+            "needs_human_review": {
+              "type": "noul",
+              "noul": 0.03
+            },
+            "has_exception": {
+              "type": "noul",
+              "noul": 0.01
+            },
+            "is_timeout": {
+              "type": "noul",
+              "noul": 0.02
+            },
+            "is_dns": {
+              "type": "noul",
+              "noul": 0.01
+            },
+            "is_database": {
+              "type": "noul",
+              "noul": 0.02
+            },
+            "is_denied": {
+              "type": "noul",
+              "noul": 0.01
+            },
+            "is_success": {
+              "type": "noul",
+              "noul": 0.99
+            },
+            "has_data_loss": {
+              "type": "noul",
+              "noul": 0.02
+            }
+          },
+          "usage": {
+            "input_tokens": 691,
+            "output_tokens": 210
+          }
+        },
+        "route": "record_only"
+      },
+      {
+        "at": "2026-09-20T14:22:04.728529+00:00",
+        "phase": "classification",
+        "case_id": "smoke",
+        "question_count": 3,
+        "ok": true,
+        "status": 200,
+        "elapsed_ms": 185.05272200036416,
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "category": {
+              "type": "choice",
+              "choice": "normal",
+              "confidence": 1.0,
+              "probabilities": {
+                "database_error": 0.0,
+                "authentication_error": 0.0,
+                "application_error": 0.0,
+                "network_error": 0.0,
+                "normal": 1.0
+              }
+            },
+            "severity": {
+              "type": "score",
+              "score": 0.0,
+              "confidence": 1.0,
+              "legend": {
+                "0": "A successful operation with no error or user impact.",
+                "1": "An individual request failed or was rejected; no evidence of wider outage or data loss.",
+                "2": "Repeated failures or an unavailable dependency disrupt multiple requests.",
+                "3": "Explicit evidence of a service-wide outage, data loss, or an active security breach."
+              },
+              "probabilities": {
+                "0": 1.0,
+                "1": 0.0,
+                "2": 0.0,
+                "3": 0.0
+              }
+            },
+            "needs_human_review": {
+              "type": "noul",
+              "noul": 0.03
+            }
+          },
+          "usage": {
+            "input_tokens": 577,
+            "output_tokens": 89
+          }
+        },
+        "route": "record_only"
+      }
+    ],
+    "latency": {
+      "1": {
+        "n": 0
+      },
+      "3": {
+        "n": 0
+      },
+      "10": {
+        "n": 0
+      }
+    }
+  }
+}

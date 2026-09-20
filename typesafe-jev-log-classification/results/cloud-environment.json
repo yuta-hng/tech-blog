@@ -1,0 +1,28 @@
+{
+  "region": "asia-northeast1",
+  "image_digest": "sha256:e6783de08ee6630021094b1f7c68b164ac87bb5467343e7ab9167f9b52b17b0f",
+  "services": {
+    "gen": {
+      "cpu": "1",
+      "memory": "512Mi",
+      "concurrency": 1,
+      "timeout_seconds": 3,
+      "min_instances": 0,
+      "max_instances": 1,
+      "execution_environment": "gen2",
+      "startup_cpu_boost": "false",
+      "revision": "jev-lab-0920-gen-00001-645"
+    },
+    "eval": {
+      "cpu": "1",
+      "memory": "512Mi",
+      "concurrency": 1,
+      "timeout_seconds": 300,
+      "min_instances": 0,
+      "max_instances": 1,
+      "execution_environment": "gen2",
+      "startup_cpu_boost": "false",
+      "revision": "jev-lab-0920-eval-00001-vn6"
+    }
+  }
+}

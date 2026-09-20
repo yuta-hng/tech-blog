@@ -1,0 +1,182 @@
+[
+  {
+    "id": "application-01",
+    "expected": "application_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nTraceback (most recent call last):\n  File \"generate_logs.py\", line 40, in generate\n    int('invalid-input-' + str(i))\nValueError: invalid literal for int() with base 10: 'invalid-input-0'\n"
+  },
+  {
+    "id": "application-02",
+    "expected": "application_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nTraceback (most recent call last):\n  File \"generate_logs.py\", line 40, in generate\n    int('invalid-input-' + str(i))\nValueError: invalid literal for int() with base 10: 'invalid-input-1'\n"
+  },
+  {
+    "id": "application-03",
+    "expected": "application_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nTraceback (most recent call last):\n  File \"generate_logs.py\", line 40, in generate\n    int('invalid-input-' + str(i))\nValueError: invalid literal for int() with base 10: 'invalid-input-2'\n"
+  },
+  {
+    "id": "application-04",
+    "expected": "application_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nTraceback (most recent call last):\n  File \"generate_logs.py\", line 40, in generate\n    int('invalid-input-' + str(i))\nValueError: invalid literal for int() with base 10: 'invalid-input-3'\n"
+  },
+  {
+    "id": "application-05",
+    "expected": "application_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nTraceback (most recent call last):\n  File \"generate_logs.py\", line 40, in generate\n    int('invalid-input-' + str(i))\nValueError: invalid literal for int() with base 10: 'invalid-input-4'\n"
+  },
+  {
+    "id": "database-01",
+    "expected": "database_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nTraceback (most recent call last):\n  File \"generate_logs.py\", line 44, in generate\n    b.execute('INSERT INTO events VALUES (?)', (str(i),))\nsqlite3.OperationalError: database is locked\n"
+  },
+  {
+    "id": "database-02",
+    "expected": "database_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nTraceback (most recent call last):\n  File \"generate_logs.py\", line 44, in generate\n    b.execute('INSERT INTO events VALUES (?)', (str(i),))\nsqlite3.OperationalError: database is locked\n"
+  },
+  {
+    "id": "database-03",
+    "expected": "database_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nTraceback (most recent call last):\n  File \"generate_logs.py\", line 44, in generate\n    b.execute('INSERT INTO events VALUES (?)', (str(i),))\nsqlite3.OperationalError: database is locked\n"
+  },
+  {
+    "id": "database-04",
+    "expected": "database_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nTraceback (most recent call last):\n  File \"generate_logs.py\", line 44, in generate\n    b.execute('INSERT INTO events VALUES (?)', (str(i),))\nsqlite3.OperationalError: database is locked\n"
+  },
+  {
+    "id": "database-05",
+    "expected": "database_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nTraceback (most recent call last):\n  File \"generate_logs.py\", line 44, in generate\n    b.execute('INSERT INTO events VALUES (?)', (str(i),))\nsqlite3.OperationalError: database is locked\n"
+  },
+  {
+    "id": "dns-01",
+    "expected": "network_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nTraceback (most recent call last):\n  File \"generate_logs.py\", line 48, in generate\n    socket.getaddrinfo('missing-' + str(i) + '.invalid', 443)\n  File \"socket.py\", line 963, in getaddrinfo\n    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsocket.gaierror: [Errno -2] Name or service not known\n"
+  },
+  {
+    "id": "dns-02",
+    "expected": "network_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nTraceback (most recent call last):\n  File \"generate_logs.py\", line 48, in generate\n    socket.getaddrinfo('missing-' + str(i) + '.invalid', 443)\n  File \"socket.py\", line 963, in getaddrinfo\n    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsocket.gaierror: [Errno -2] Name or service not known\n"
+  },
+  {
+    "id": "dns-03",
+    "expected": "network_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nTraceback (most recent call last):\n  File \"generate_logs.py\", line 48, in generate\n    socket.getaddrinfo('missing-' + str(i) + '.invalid', 443)\n  File \"socket.py\", line 963, in getaddrinfo\n    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsocket.gaierror: [Errno -2] Name or service not known\n"
+  },
+  {
+    "id": "dns-04",
+    "expected": "network_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nTraceback (most recent call last):\n  File \"generate_logs.py\", line 48, in generate\n    socket.getaddrinfo('missing-' + str(i) + '.invalid', 443)\n  File \"socket.py\", line 963, in getaddrinfo\n    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsocket.gaierror: [Errno -2] Name or service not known\n"
+  },
+  {
+    "id": "dns-05",
+    "expected": "network_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nTraceback (most recent call last):\n  File \"generate_logs.py\", line 48, in generate\n    socket.getaddrinfo('missing-' + str(i) + '.invalid', 443)\n  File \"socket.py\", line 963, in getaddrinfo\n    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsocket.gaierror: [Errno -2] Name or service not known\n"
+  },
+  {
+    "id": "timeout-01",
+    "expected": "network_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nGET /slow\nTraceback (most recent call last):\n  File \"generate_logs.py\", line 54, in generate\n    response = conn.getresponse()\n               ^^^^^^^^^^^^^^^^^^\n  File \"client.py\", line 1457, in getresponse\n    response.begin()\n  File \"client.py\", line 336, in begin\n    version, status, reason = self._read_status()\n                              ^^^^^^^^^^^^^^^^^^^\n  File \"client.py\", line 297, in _read_status\n    line = str(self.fp.readline(_MAXLINE + 1), \"iso-8859-1\")\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"socket.py\", line 707, in readinto\n    return self._sock.recv_into(b)\n           ^^^^^^^^^^^^^^^^^^^^^^^\nTimeoutError: timed out\n"
+  },
+  {
+    "id": "timeout-02",
+    "expected": "network_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nGET /slow\nTraceback (most recent call last):\n  File \"generate_logs.py\", line 54, in generate\n    response = conn.getresponse()\n               ^^^^^^^^^^^^^^^^^^\n  File \"client.py\", line 1457, in getresponse\n    response.begin()\n  File \"client.py\", line 336, in begin\n    version, status, reason = self._read_status()\n                              ^^^^^^^^^^^^^^^^^^^\n  File \"client.py\", line 297, in _read_status\n    line = str(self.fp.readline(_MAXLINE + 1), \"iso-8859-1\")\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"socket.py\", line 707, in readinto\n    return self._sock.recv_into(b)\n           ^^^^^^^^^^^^^^^^^^^^^^^\nTimeoutError: timed out\n"
+  },
+  {
+    "id": "timeout-03",
+    "expected": "network_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nGET /slow\nTraceback (most recent call last):\n  File \"generate_logs.py\", line 54, in generate\n    response = conn.getresponse()\n               ^^^^^^^^^^^^^^^^^^\n  File \"client.py\", line 1457, in getresponse\n    response.begin()\n  File \"client.py\", line 336, in begin\n    version, status, reason = self._read_status()\n                              ^^^^^^^^^^^^^^^^^^^\n  File \"client.py\", line 297, in _read_status\n    line = str(self.fp.readline(_MAXLINE + 1), \"iso-8859-1\")\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"socket.py\", line 707, in readinto\n    return self._sock.recv_into(b)\n           ^^^^^^^^^^^^^^^^^^^^^^^\nTimeoutError: timed out\n"
+  },
+  {
+    "id": "timeout-04",
+    "expected": "network_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nGET /slow\nTraceback (most recent call last):\n  File \"generate_logs.py\", line 54, in generate\n    response = conn.getresponse()\n               ^^^^^^^^^^^^^^^^^^\n  File \"client.py\", line 1457, in getresponse\n    response.begin()\n  File \"client.py\", line 336, in begin\n    version, status, reason = self._read_status()\n                              ^^^^^^^^^^^^^^^^^^^\n  File \"client.py\", line 297, in _read_status\n    line = str(self.fp.readline(_MAXLINE + 1), \"iso-8859-1\")\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"socket.py\", line 707, in readinto\n    return self._sock.recv_into(b)\n           ^^^^^^^^^^^^^^^^^^^^^^^\nTimeoutError: timed out\n"
+  },
+  {
+    "id": "timeout-05",
+    "expected": "network_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nGET /slow\nTraceback (most recent call last):\n  File \"generate_logs.py\", line 54, in generate\n    response = conn.getresponse()\n               ^^^^^^^^^^^^^^^^^^\n  File \"client.py\", line 1457, in getresponse\n    response.begin()\n  File \"client.py\", line 336, in begin\n    version, status, reason = self._read_status()\n                              ^^^^^^^^^^^^^^^^^^^\n  File \"client.py\", line 297, in _read_status\n    line = str(self.fp.readline(_MAXLINE + 1), \"iso-8859-1\")\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"socket.py\", line 707, in readinto\n    return self._sock.recv_into(b)\n           ^^^^^^^^^^^^^^^^^^^^^^^\nTimeoutError: timed out\n"
+  },
+  {
+    "id": "authentication-01",
+    "expected": "authentication_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nGET /private\nHTTP 401 Unauthorized\nRequest rejected: credentials required.\n"
+  },
+  {
+    "id": "authentication-02",
+    "expected": "authentication_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nGET /private\nHTTP 401 Unauthorized\nRequest rejected: credentials required.\n"
+  },
+  {
+    "id": "authentication-03",
+    "expected": "authentication_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nGET /private\nHTTP 401 Unauthorized\nRequest rejected: credentials required.\n"
+  },
+  {
+    "id": "authentication-04",
+    "expected": "authentication_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nGET /private\nHTTP 401 Unauthorized\nRequest rejected: credentials required.\n"
+  },
+  {
+    "id": "authentication-05",
+    "expected": "authentication_error",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nGET /private\nHTTP 401 Unauthorized\nRequest rejected: credentials required.\n"
+  },
+  {
+    "id": "normal-01",
+    "expected": "normal",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nGET /health\nHTTP 200 OK\nRequest completed successfully.\n"
+  },
+  {
+    "id": "normal-02",
+    "expected": "normal",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nGET /health\nHTTP 200 OK\nRequest completed successfully.\n"
+  },
+  {
+    "id": "normal-03",
+    "expected": "normal",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nGET /health\nHTTP 200 OK\nRequest completed successfully.\n"
+  },
+  {
+    "id": "normal-04",
+    "expected": "normal",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nGET /health\nHTTP 200 OK\nRequest completed successfully.\n"
+  },
+  {
+    "id": "normal-05",
+    "expected": "normal",
+    "source": "local_fault_injection",
+    "state": "Request processing log\nGET /health\nHTTP 200 OK\nRequest completed successfully.\n"
+  }
+]

@@ -1,0 +1,131 @@
+{
+  "metric": "run.googleapis.com/container/startup_latencies",
+  "unit": "ms",
+  "series": [
+    {
+      "metric_labels": {},
+      "points": [
+        {
+          "interval": {
+            "startTime": "2026-09-20T14:24:00.001Z",
+            "endTime": "2026-09-20T14:25:00Z"
+          },
+          "value": {
+            "distributionValue": {
+              "bucketOptions": {
+                "exponentialBuckets": {
+                  "numFiniteBuckets": 106,
+                  "growthFactor": 1.1,
+                  "scale": 10
+                }
+              }
+            }
+          }
+        },
+        {
+          "interval": {
+            "startTime": "2026-09-20T14:23:00.001Z",
+            "endTime": "2026-09-20T14:24:00Z"
+          },
+          "value": {
+            "distributionValue": {
+              "bucketOptions": {
+                "exponentialBuckets": {
+                  "numFiniteBuckets": 106,
+                  "growthFactor": 1.1,
+                  "scale": 10
+                }
+              }
+            }
+          }
+        },
+        {
+          "interval": {
+            "startTime": "2026-09-20T14:22:00.001Z",
+            "endTime": "2026-09-20T14:23:00Z"
+          },
+          "value": {
+            "distributionValue": {
+              "bucketOptions": {
+                "exponentialBuckets": {
+                  "numFiniteBuckets": 106,
+                  "growthFactor": 1.1,
+                  "scale": 10
+                }
+              }
+            }
+          }
+        },
+        {
+          "interval": {
+            "startTime": "2026-09-20T14:21:00.001Z",
+            "endTime": "2026-09-20T14:22:00Z"
+          },
+          "value": {
+            "distributionValue": {
+              "count": "1",
+              "mean": 834.81,
+              "bucketOptions": {
+                "exponentialBuckets": {
+                  "numFiniteBuckets": 106,
+                  "growthFactor": 1.1,
+                  "scale": 10
+                }
+              },
+              "bucketCounts": [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+[
+  {
+    "id": "upstream_unknown",
+    "state": "Request failed. Upstream service unavailable. No status code, endpoint, or stack trace was recorded.",
+    "source": "handwritten_synthetic_no_ground_truth",
+    "ok": true,
+    "status": 200,
+    "elapsed_ms": 772.4590869993335,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "category": {
+          "type": "choice",
+          "choice": "network_error",
+          "confidence": 0.76,
+          "probabilities": {
+            "normal": 0.0,
+            "network_error": 0.81,
+            "application_error": 0.19,
+            "authentication_error": 0.0,
+            "database_error": 0.0
+          }
+        },
+        "severity": {
+          "type": "score",
+          "score": 1.11,
+          "confidence": 0.89,
+          "legend": {
+            "0": "A successful operation with no error or user impact.",
+            "1": "An individual request failed or was rejected; no evidence of wider outage or data loss.",
+            "2": "Repeated failures or an unavailable dependency disrupt multiple requests.",
+            "3": "Explicit evidence of a service-wide outage, data loss, or an active security breach."
+          },
+          "probabilities": {
+            "0": 0.0,
+            "1": 0.89,
+            "2": 0.11,
+            "3": 0.0
+          }
+        },
+        "needs_human_review": {
+          "type": "noul",
+          "noul": 0.93
+        }
+      },
+      "usage": {
+        "input_tokens": 588,
+        "output_tokens": 90
+      }
+    },
+    "route": "human_review"
+  },
+  {
+    "id": "database_or_network",
+    "state": "Database connection attempt timed out after 5 seconds. Database health and network connectivity have not been checked.",
+    "source": "handwritten_synthetic_no_ground_truth",
+    "ok": true,
+    "status": 200,
+    "elapsed_ms": 219.1718590001983,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "category": {
+          "type": "choice",
+          "choice": "network_error",
+          "confidence": 0.94,
+          "probabilities": {
+            "authentication_error": 0.0,
+            "application_error": 0.0,
+            "network_error": 0.95,
+            "database_error": 0.05,
+            "normal": 0.0
+          }
+        },
+        "severity": {
+          "type": "score",
+          "score": 1.02,
+          "confidence": 0.98,
+          "legend": {
+            "0": "A successful operation with no error or user impact.",
+            "1": "An individual request failed or was rejected; no evidence of wider outage or data loss.",
+            "2": "Repeated failures or an unavailable dependency disrupt multiple requests.",
+            "3": "Explicit evidence of a service-wide outage, data loss, or an active security breach."
+          },
+          "probabilities": {
+            "0": 0.0,
+            "1": 0.98,
+            "2": 0.02,
+            "3": 0.0
+          }
+        },
+        "needs_human_review": {
+          "type": "noul",
+          "noul": 0.96
+        }
+      },
+      "usage": {
+        "input_tokens": 587,
+        "output_tokens": 90
+      }
+    },
+    "route": "human_review"
+  },
+  {
+    "id": "recovered_retry",
+    "state": "First request failed with HTTP 503. Retried once and got HTTP 200. Subsequent requests succeeded.",
+    "source": "handwritten_synthetic_no_ground_truth",
+    "ok": true,
+    "status": 200,
+    "elapsed_ms": 262.79846699981135,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "category": {
+          "type": "choice",
+          "choice": "application_error",
+          "confidence": 0.55,
+          "probabilities": {
+            "network_error": 0.27,
+            "application_error": 0.64,
+            "normal": 0.08,
+            "database_error": 0.01,
+            "authentication_error": 0.0
+          }
+        },
+        "severity": {
+          "type": "score",
+          "score": 1.01,
+          "confidence": 0.99,
+          "legend": {
+            "0": "A successful operation with no error or user impact.",
+            "1": "An individual request failed or was rejected; no evidence of wider outage or data loss.",
+            "2": "Repeated failures or an unavailable dependency disrupt multiple requests.",
+            "3": "Explicit evidence of a service-wide outage, data loss, or an active security breach."
+          },
+          "probabilities": {
+            "0": 0.0,
+            "1": 0.99,
+            "2": 0.01,
+            "3": 0.0
+          }
+        },
+        "needs_human_review": {
+          "type": "noul",
+          "noul": 0.64
+        }
+      },
+      "usage": {
+        "input_tokens": 594,
+        "output_tokens": 90
+      }
+    },
+    "route": "human_review"
+  }
+]

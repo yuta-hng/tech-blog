@@ -1,0 +1,110 @@
+{
+  "python": "3.12.3",
+  "platform": "Linux",
+  "location": "local_execution_environment_not_verified",
+  "connection": "sequential HTTPS keep-alive",
+  "retries": 0,
+  "requested_model": "jev-1.13.0",
+  "repetitions": 50,
+  "seed": 920,
+  "cases_sha256": "d84ff3d96e2e2dfc331e41b37b0c556b0f3741fc9a41d3b5c4a1739aeb24cdaa",
+  "benchmark_case_id": "database-01",
+  "benchmark_state_chars": 209,
+  "questions": {
+    "1": {
+      "category": {
+        "type": "choice",
+        "instructions": "Classify the primary problem directly evidenced in this log. A database locking error belongs to database_error. A socket or DNS timeout belongs to network_error.",
+        "criteria": {
+          "application_error": "Application code failure, such as parsing invalid input or an unhandled exception unrelated to a dependency.",
+          "network_error": "DNS resolution, socket connection, or network read failure or timeout.",
+          "authentication_error": "A request was rejected because credentials or authorization are missing or invalid.",
+          "database_error": "A database operation failed because of database locking, query errors, or connection pool exhaustion.",
+          "normal": "Successful request with no evidence of failure."
+        }
+      }
+    },
+    "3": {
+      "category": {
+        "type": "choice",
+        "instructions": "Classify the primary problem directly evidenced in this log. A database locking error belongs to database_error. A socket or DNS timeout belongs to network_error.",
+        "criteria": {
+          "application_error": "Application code failure, such as parsing invalid input or an unhandled exception unrelated to a dependency.",
+          "network_error": "DNS resolution, socket connection, or network read failure or timeout.",
+          "authentication_error": "A request was rejected because credentials or authorization are missing or invalid.",
+          "database_error": "A database operation failed because of database locking, query errors, or connection pool exhaustion.",
+          "normal": "Successful request with no evidence of failure."
+        }
+      },
+      "severity": {
+        "type": "score",
+        "instructions": "Rate the operational impact supported by this log only. Do not assume an outage or data loss without evidence.",
+        "criteria": [
+          "A successful operation with no error or user impact.",
+          "An individual request failed or was rejected; no evidence of wider outage or data loss.",
+          "Repeated failures or an unavailable dependency disrupt multiple requests.",
+          "Explicit evidence of a service-wide outage, data loss, or an active security breach."
+        ]
+      },
+      "needs_human_review": {
+        "type": "noul",
+        "instructions": "Does this log show a failure or uncertainty that a human operator should investigate?"
+      }
+    },
+    "10": {
+      "category": {
+        "type": "choice",
+        "instructions": "Classify the primary problem directly evidenced in this log. A database locking error belongs to database_error. A socket or DNS timeout belongs to network_error.",
+        "criteria": {
+          "application_error": "Application code failure, such as parsing invalid input or an unhandled exception unrelated to a dependency.",
+          "network_error": "DNS resolution, socket connection, or network read failure or timeout.",
+          "authentication_error": "A request was rejected because credentials or authorization are missing or invalid.",
+          "database_error": "A database operation failed because of database locking, query errors, or connection pool exhaustion.",
+          "normal": "Successful request with no evidence of failure."
+        }
+      },
+      "severity": {
+        "type": "score",
+        "instructions": "Rate the operational impact supported by this log only. Do not assume an outage or data loss without evidence.",
+        "criteria": [
+          "A successful operation with no error or user impact.",
+          "An individual request failed or was rejected; no evidence of wider outage or data loss.",
+          "Repeated failures or an unavailable dependency disrupt multiple requests.",
+          "Explicit evidence of a service-wide outage, data loss, or an active security breach."
+        ]
+      },
+      "needs_human_review": {
+        "type": "noul",
+        "instructions": "Does this log show a failure or uncertainty that a human operator should investigate?"
+      },
+      "has_exception": {
+        "type": "noul",
+        "instructions": "Does the log contain a Python exception traceback?"
+      },
+      "is_timeout": {
+        "type": "noul",
+        "instructions": "Does the log explicitly show a timeout?"
+      },
+      "is_dns": {
+        "type": "noul",
+        "instructions": "Does the log show failure of DNS name resolution?"
+      },
+      "is_database": {
+        "type": "noul",
+        "instructions": "Does the log show a failed database operation?"
+      },
+      "is_denied": {
+        "type": "noul",
+        "instructions": "Does the log show an HTTP request rejected for missing credentials?"
+      },
+      "is_success": {
+        "type": "noul",
+        "instructions": "Does the log show a successful HTTP response?"
+      },
+      "has_data_loss": {
+        "type": "noul",
+        "instructions": "Does the log explicitly show data loss?"
+      }
+    }
+  }
+}

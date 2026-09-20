@@ -1,0 +1,182 @@
+[
+  {
+    "id": "database-01",
+    "expected": "database_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "Traceback (most recent call last):\n  File \"app.py\", line 129, in do_POST\n    fault(kind)\n  File \"app.py\", line 36, in fault\n    b.execute(\"INSERT INTO events VALUES ('test')\")\nsqlite3.OperationalError: database is locked\n"
+  },
+  {
+    "id": "database-02",
+    "expected": "database_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "Traceback (most recent call last):\n  File \"app.py\", line 129, in do_POST\n    fault(kind)\n  File \"app.py\", line 36, in fault\n    b.execute(\"INSERT INTO events VALUES ('test')\")\nsqlite3.OperationalError: database is locked\n"
+  },
+  {
+    "id": "database-03",
+    "expected": "database_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "Traceback (most recent call last):\n  File \"app.py\", line 129, in do_POST\n    fault(kind)\n  File \"app.py\", line 36, in fault\n    b.execute(\"INSERT INTO events VALUES ('test')\")\nsqlite3.OperationalError: database is locked\n"
+  },
+  {
+    "id": "database-04",
+    "expected": "database_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "Traceback (most recent call last):\n  File \"app.py\", line 129, in do_POST\n    fault(kind)\n  File \"app.py\", line 36, in fault\n    b.execute(\"INSERT INTO events VALUES ('test')\")\nsqlite3.OperationalError: database is locked\n"
+  },
+  {
+    "id": "database-05",
+    "expected": "database_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "Traceback (most recent call last):\n  File \"app.py\", line 129, in do_POST\n    fault(kind)\n  File \"app.py\", line 36, in fault\n    b.execute(\"INSERT INTO events VALUES ('test')\")\nsqlite3.OperationalError: database is locked\n"
+  },
+  {
+    "id": "dns-01",
+    "expected": "network_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "Traceback (most recent call last):\n  File \"app.py\", line 129, in do_POST\n    fault(kind)\n  File \"app.py\", line 40, in fault\n    socket.getaddrinfo('missing.jev-lab.invalid',443)\n  File \"socket.py\", line 978, in getaddrinfo\n    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsocket.gaierror: [Errno -2] Name or service not known\n"
+  },
+  {
+    "id": "dns-02",
+    "expected": "network_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "Traceback (most recent call last):\n  File \"app.py\", line 129, in do_POST\n    fault(kind)\n  File \"app.py\", line 40, in fault\n    socket.getaddrinfo('missing.jev-lab.invalid',443)\n  File \"socket.py\", line 978, in getaddrinfo\n    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsocket.gaierror: [Errno -2] Name or service not known\n"
+  },
+  {
+    "id": "dns-03",
+    "expected": "network_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "Traceback (most recent call last):\n  File \"app.py\", line 129, in do_POST\n    fault(kind)\n  File \"app.py\", line 40, in fault\n    socket.getaddrinfo('missing.jev-lab.invalid',443)\n  File \"socket.py\", line 978, in getaddrinfo\n    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsocket.gaierror: [Errno -2] Name or service not known\n"
+  },
+  {
+    "id": "dns-04",
+    "expected": "network_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "Traceback (most recent call last):\n  File \"app.py\", line 129, in do_POST\n    fault(kind)\n  File \"app.py\", line 40, in fault\n    socket.getaddrinfo('missing.jev-lab.invalid',443)\n  File \"socket.py\", line 978, in getaddrinfo\n    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsocket.gaierror: [Errno -2] Name or service not known\n"
+  },
+  {
+    "id": "dns-05",
+    "expected": "network_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "Traceback (most recent call last):\n  File \"app.py\", line 129, in do_POST\n    fault(kind)\n  File \"app.py\", line 40, in fault\n    socket.getaddrinfo('missing.jev-lab.invalid',443)\n  File \"socket.py\", line 978, in getaddrinfo\n    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsocket.gaierror: [Errno -2] Name or service not known\n"
+  },
+  {
+    "id": "iam-01",
+    "expected": "authentication_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "Traceback (most recent call last):\n  File \"app.py\", line 129, in do_POST\n    fault(kind)\n  File \"app.py\", line 56, in fault\n    raise PermissionError('Secret Manager access denied: HTTP 403 (test identity lacks secret access)')\nPermissionError: Secret Manager access denied: HTTP 403 (test identity lacks secret access)\n"
+  },
+  {
+    "id": "iam-02",
+    "expected": "authentication_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "Traceback (most recent call last):\n  File \"app.py\", line 129, in do_POST\n    fault(kind)\n  File \"app.py\", line 56, in fault\n    raise PermissionError('Secret Manager access denied: HTTP 403 (test identity lacks secret access)')\nPermissionError: Secret Manager access denied: HTTP 403 (test identity lacks secret access)\n"
+  },
+  {
+    "id": "iam-03",
+    "expected": "authentication_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "Traceback (most recent call last):\n  File \"app.py\", line 129, in do_POST\n    fault(kind)\n  File \"app.py\", line 56, in fault\n    raise PermissionError('Secret Manager access denied: HTTP 403 (test identity lacks secret access)')\nPermissionError: Secret Manager access denied: HTTP 403 (test identity lacks secret access)\n"
+  },
+  {
+    "id": "iam-04",
+    "expected": "authentication_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "Traceback (most recent call last):\n  File \"app.py\", line 129, in do_POST\n    fault(kind)\n  File \"app.py\", line 56, in fault\n    raise PermissionError('Secret Manager access denied: HTTP 403 (test identity lacks secret access)')\nPermissionError: Secret Manager access denied: HTTP 403 (test identity lacks secret access)\n"
+  },
+  {
+    "id": "iam-05",
+    "expected": "authentication_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "Traceback (most recent call last):\n  File \"app.py\", line 129, in do_POST\n    fault(kind)\n  File \"app.py\", line 56, in fault\n    raise PermissionError('Secret Manager access denied: HTTP 403 (test identity lacks secret access)')\nPermissionError: Secret Manager access denied: HTTP 403 (test identity lacks secret access)\n"
+  },
+  {
+    "id": "timeout-01",
+    "expected": "network_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "{\"severity\": \"ERROR\", \"httpRequest\": {\"requestMethod\": \"POST\", \"status\": 504, \"latency\": \"2.999620237s\", \"protocol\": \"HTTP/1.1\"}}\nThe request has been terminated because it has reached the maximum request timeout. To change this limit, see https://cloud.google.com/run/docs/configuring/request-timeout"
+  },
+  {
+    "id": "timeout-02",
+    "expected": "network_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "{\"severity\": \"ERROR\", \"httpRequest\": {\"requestMethod\": \"POST\", \"status\": 504, \"latency\": \"2.999364790s\", \"protocol\": \"HTTP/1.1\"}}\nThe request has been terminated because it has reached the maximum request timeout. To change this limit, see https://cloud.google.com/run/docs/configuring/request-timeout"
+  },
+  {
+    "id": "timeout-03",
+    "expected": "network_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "{\"severity\": \"ERROR\", \"httpRequest\": {\"requestMethod\": \"POST\", \"status\": 504, \"latency\": \"3.000090451s\", \"protocol\": \"HTTP/1.1\"}}\nThe request has been terminated because it has reached the maximum request timeout. To change this limit, see https://cloud.google.com/run/docs/configuring/request-timeout"
+  },
+  {
+    "id": "timeout-04",
+    "expected": "network_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "{\"severity\": \"ERROR\", \"httpRequest\": {\"requestMethod\": \"POST\", \"status\": 504, \"latency\": \"2.999136563s\", \"protocol\": \"HTTP/1.1\"}}\nThe request has been terminated because it has reached the maximum request timeout. To change this limit, see https://cloud.google.com/run/docs/configuring/request-timeout"
+  },
+  {
+    "id": "timeout-05",
+    "expected": "network_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "{\"severity\": \"ERROR\", \"httpRequest\": {\"requestMethod\": \"POST\", \"status\": 504, \"latency\": \"2.998695604s\", \"protocol\": \"HTTP/1.1\"}}\nThe request has been terminated because it has reached the maximum request timeout. To change this limit, see https://cloud.google.com/run/docs/configuring/request-timeout"
+  },
+  {
+    "id": "oom-01",
+    "expected": "application_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "Out-of-memory event detected in container"
+  },
+  {
+    "id": "oom-02",
+    "expected": "application_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "Out-of-memory event detected in container"
+  },
+  {
+    "id": "oom-03",
+    "expected": "application_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "Out-of-memory event detected in container"
+  },
+  {
+    "id": "oom-04",
+    "expected": "application_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "Out-of-memory event detected in container"
+  },
+  {
+    "id": "oom-05",
+    "expected": "application_error",
+    "source": "cloud_logging_fault_injection",
+    "state": "Out-of-memory event detected in container"
+  },
+  {
+    "id": "normal-01",
+    "expected": "normal",
+    "source": "cloud_logging_fault_injection",
+    "state": "Request completed successfully: HTTP 200"
+  },
+  {
+    "id": "normal-02",
+    "expected": "normal",
+    "source": "cloud_logging_fault_injection",
+    "state": "Request completed successfully: HTTP 200"
+  },
+  {
+    "id": "normal-03",
+    "expected": "normal",
+    "source": "cloud_logging_fault_injection",
+    "state": "Request completed successfully: HTTP 200"
+  },
+  {
+    "id": "normal-04",
+    "expected": "normal",
+    "source": "cloud_logging_fault_injection",
+    "state": "Request completed successfully: HTTP 200"
+  },
+  {
+    "id": "normal-05",
+    "expected": "normal",
+    "source": "cloud_logging_fault_injection",
+    "state": "Request completed successfully: HTTP 200"
+  }
+]
