@@ -1,0 +1,191 @@
+{
+  "completed": true,
+  "case_count": 7,
+  "http_requests_in_cases": 42,
+  "settling_probes_included": false,
+  "cases": [
+    {
+      "index": 1,
+      "case": "pending",
+      "samples_per_target": 3,
+      "psc_before": "PENDING",
+      "psc_after": "PENDING",
+      "health_before": [
+        "HEALTHY"
+      ],
+      "health_after": [
+        "HEALTHY"
+      ],
+      "ip_successes": 0,
+      "hostname_successes": 0,
+      "ip_exit_codes": [
+        28
+      ],
+      "hostname_exit_codes": [
+        6
+      ],
+      "peer_ips": [],
+      "first_probe_utc": "2026-09-21T14:44:20.302067+00:00",
+      "last_probe_utc": "2026-09-21T14:44:26.518621+00:00"
+    },
+    {
+      "index": 2,
+      "case": "accepted_ip",
+      "samples_per_target": 3,
+      "psc_before": "ACCEPTED",
+      "psc_after": "ACCEPTED",
+      "health_before": [
+        "HEALTHY"
+      ],
+      "health_after": [
+        "HEALTHY"
+      ],
+      "ip_successes": 3,
+      "hostname_successes": 0,
+      "ip_exit_codes": [
+        0
+      ],
+      "hostname_exit_codes": [
+        6
+      ],
+      "peer_ips": [
+        "10.10.10.2"
+      ],
+      "first_probe_utc": "2026-09-21T14:44:52.869776+00:00",
+      "last_probe_utc": "2026-09-21T14:44:55.019484+00:00"
+    },
+    {
+      "index": 3,
+      "case": "dns_ready",
+      "samples_per_target": 3,
+      "psc_before": "ACCEPTED",
+      "psc_after": "ACCEPTED",
+      "health_before": [
+        "HEALTHY"
+      ],
+      "health_after": [
+        "HEALTHY"
+      ],
+      "ip_successes": 3,
+      "hostname_successes": 3,
+      "ip_exit_codes": [
+        0
+      ],
+      "hostname_exit_codes": [
+        0
+      ],
+      "peer_ips": [
+        "10.10.10.2"
+      ],
+      "first_probe_utc": "2026-09-21T14:45:10.977827+00:00",
+      "last_probe_utc": "2026-09-21T14:45:13.153909+00:00"
+    },
+    {
+      "index": 4,
+      "case": "dns_removed",
+      "samples_per_target": 3,
+      "psc_before": "ACCEPTED",
+      "psc_after": "ACCEPTED",
+      "health_before": [
+        "HEALTHY"
+      ],
+      "health_after": [
+        "HEALTHY"
+      ],
+      "ip_successes": 3,
+      "hostname_successes": 0,
+      "ip_exit_codes": [
+        0
+      ],
+      "hostname_exit_codes": [
+        6
+      ],
+      "peer_ips": [
+        "10.10.10.2"
+      ],
+      "first_probe_utc": "2026-09-21T14:45:29.402033+00:00",
+      "last_probe_utc": "2026-09-21T14:45:31.605243+00:00"
+    },
+    {
+      "index": 5,
+      "case": "restored",
+      "samples_per_target": 3,
+      "psc_before": "ACCEPTED",
+      "psc_after": "ACCEPTED",
+      "health_before": [
+        "HEALTHY"
+      ],
+      "health_after": [
+        "HEALTHY"
+      ],
+      "ip_successes": 3,
+      "hostname_successes": 3,
+      "ip_exit_codes": [
+        0
+      ],
+      "hostname_exit_codes": [
+        0
+      ],
+      "peer_ips": [
+        "10.10.10.2"
+      ],
+      "first_probe_utc": "2026-09-21T14:45:48.822885+00:00",
+      "last_probe_utc": "2026-09-21T14:45:50.986290+00:00"
+    },
+    {
+      "index": 6,
+      "case": "firewall_disabled",
+      "samples_per_target": 3,
+      "psc_before": "ACCEPTED",
+      "psc_after": "ACCEPTED",
+      "health_before": [
+        "HEALTHY"
+      ],
+      "health_after": [
+        "HEALTHY"
+      ],
+      "ip_successes": 0,
+      "hostname_successes": 0,
+      "ip_exit_codes": [
+        28
+      ],
+      "hostname_exit_codes": [
+        28
+      ],
+      "peer_ips": [],
+      "first_probe_utc": "2026-09-21T14:46:16.596352+00:00",
+      "last_probe_utc": "2026-09-21T14:46:26.715261+00:00"
+    },
+    {
+      "index": 7,
+      "case": "restored",
+      "samples_per_target": 3,
+      "psc_before": "ACCEPTED",
+      "psc_after": "ACCEPTED",
+      "health_before": [
+        "HEALTHY"
+      ],
+      "health_after": [
+        "HEALTHY"
+      ],
+      "ip_successes": 3,
+      "hostname_successes": 3,
+      "ip_exit_codes": [
+        0
+      ],
+      "hostname_exit_codes": [
+        0
+      ],
+      "peer_ips": [
+        "10.10.10.2"
+      ],
+      "first_probe_utc": "2026-09-21T14:46:52.725397+00:00",
+      "last_probe_utc": "2026-09-21T14:46:54.869418+00:00"
+    }
+  ],
+  "evidence_sha256": {
+    "cases.json": "a48644bc11316e552907d3d78c208cf2b628ab17c680043b2290a0086dfe0aca",
+    "events.jsonl": "e0fa8baa5432f395f4161a679d7c755bfd5862c98149f228780110996b53ee7f",
+    "environment.json": "14fc4994c8d1838e0c7a48d94eefeae38e121be6cdc2ae7ca3698b59a6e75e12"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "region": "asia-northeast1",
+  "zone": "asia-northeast1-b",
+  "vm_machine_type": "e2-micro",
+  "vm_count": 2,
+  "same_project": true,
+  "dns_ttl": 30,
+  "attempts_per_case": 3,
+  "http_connect_timeout_s": 2,
+  "http_max_time_s": 3,
+  "network_scope": "two isolated VPCs",
+  "started_utc": "2026-09-21T14:43:56.753775+00:00",
+  "completed": true,
+  "source_sha256": {
+    "lab.py": "521da164e32c923002ee5d18888a01a61bd2f8d489c105f32e27a4606f92b771",
+    "measure.py": "1634c220ef4b13177b99a0ec8fb75a3a0496a3bea5430fbbe7efe8ae53bc0efa",
+    "probe.py": "ffd5e3f88419f38ad6e7d657c9d0e3adcec59ed07fc2c15b0457ca3c74df9f5b",
+    "startup.sh": "ce0e2559ea69daf209f6ff0f0bd66a06c9d02c523199a78c716e3ce3c76d63d2"
+  },
+  "gcloud_version": {
+    "Google Cloud SDK": "583.0.0",
+    "alpha": "2026.08.31",
+    "beta": "2026.08.31",
+    "bq": "2.1.38",
+    "bundled-python3-unix": "3.14.7",
+    "core": "2026.08.31",
+    "gcloud-crc32c": "1.0.0",
+    "gke-gcloud-auth-plugin": "0.5.19",
+    "gsutil": "5.37",
+    "kubectl": "1.35.8",
+    "preview": "2026.08.31"
+  },
+  "vm_versions": {
+    "p": "12.15\nPython 3.11.2\ncurl 7.88.1 (x86_64-pc-linux-gnu) libcurl/7.88.1 OpenSSL/3.0.20 zlib/1.2.13 brotli/1.0.9 zstd/1.5.4 libidn2/2.3.3 libpsl/0.21.2 (+libidn2/2.3.3) libssh2/1.10.0 nghttp2/1.52.0 librtmp/2.3 OpenLDAP/2.5.13\nRelease-Date: 2023-02-20, security patched: 7.88.1-10+deb12u15\nProtocols: dict file ftp ftps gopher gophers http https imap imaps ldap ldaps mqtt pop3 pop3s rtmp rtsp scp sftp smb smbs smtp smtps telnet tftp\nFeatures: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM NTLM_WB PSL SPNEGO SSL threadsafe TLS-SRP UnixSockets zstd",
+    "c": "12.15\nPython 3.11.2\ncurl 7.88.1 (x86_64-pc-linux-gnu) libcurl/7.88.1 OpenSSL/3.0.20 zlib/1.2.13 brotli/1.0.9 zstd/1.5.4 libidn2/2.3.3 libpsl/0.21.2 (+libidn2/2.3.3) libssh2/1.10.0 nghttp2/1.52.0 librtmp/2.3 OpenLDAP/2.5.13\nRelease-Date: 2023-02-20, security patched: 7.88.1-10+deb12u15\nProtocols: dict file ftp ftps gopher gophers http https imap imaps ldap ldaps mqtt pop3 pop3s rtmp rtsp scp sftp smb smbs smtp smtps telnet tftp\nFeatures: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM NTLM_WB PSL SPNEGO SSL threadsafe TLS-SRP UnixSockets zstd"
+  },
+  "finished_utc": "2026-09-21T14:46:58.639336+00:00",
+  "restore_failures": []
+}

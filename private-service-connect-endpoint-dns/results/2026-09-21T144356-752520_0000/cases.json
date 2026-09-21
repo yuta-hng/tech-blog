@@ -1,0 +1,704 @@
+[
+  {
+    "case": "pending",
+    "before": {
+      "utc": "2026-09-21T14:44:18.350557+00:00",
+      "psc_status": "PENDING",
+      "endpoint_ip": "10.20.0.10",
+      "backend_health": [
+        "HEALTHY"
+      ],
+      "nat_http_rule_disabled": false
+    },
+    "probes": [
+      {
+        "utc": "2026-09-21T14:44:20.302067+00:00",
+        "attempt": 1,
+        "dns": {
+          "exit_code": 0,
+          "answer": ";; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 12043\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 512"
+        },
+        "ip": {
+          "exit_code": 28,
+          "http_status": "000",
+          "payload": null,
+          "elapsed_ms": 2012.4,
+          "error": "curl: (28) Failed to connect to 10.20.0.10 port 80 after 2000 ms: Timeout was reached"
+        },
+        "hostname": {
+          "exit_code": 6,
+          "http_status": "000",
+          "payload": null,
+          "elapsed_ms": 48.6,
+          "error": "curl: (6) Could not resolve host: hello.psc.test"
+        }
+      },
+      {
+        "utc": "2026-09-21T14:44:23.413444+00:00",
+        "attempt": 2,
+        "dns": {
+          "exit_code": 0,
+          "answer": ";; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 63111\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 512"
+        },
+        "ip": {
+          "exit_code": 28,
+          "http_status": "000",
+          "payload": null,
+          "elapsed_ms": 2014.5,
+          "error": "curl: (28) Failed to connect to 10.20.0.10 port 80 after 2000 ms: Timeout was reached"
+        },
+        "hostname": {
+          "exit_code": 6,
+          "http_status": "000",
+          "payload": null,
+          "elapsed_ms": 53.0,
+          "error": "curl: (6) Could not resolve host: hello.psc.test"
+        }
+      },
+      {
+        "utc": "2026-09-21T14:44:26.518621+00:00",
+        "attempt": 3,
+        "dns": {
+          "exit_code": 0,
+          "answer": ";; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 29686\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 512"
+        },
+        "ip": {
+          "exit_code": 28,
+          "http_status": "000",
+          "payload": null,
+          "elapsed_ms": 2012.8,
+          "error": "curl: (28) Failed to connect to 10.20.0.10 port 80 after 2001 ms: Timeout was reached"
+        },
+        "hostname": {
+          "exit_code": 6,
+          "http_status": "000",
+          "payload": null,
+          "elapsed_ms": 49.1,
+          "error": "curl: (6) Could not resolve host: hello.psc.test"
+        }
+      }
+    ],
+    "after": {
+      "utc": "2026-09-21T14:44:32.362712+00:00",
+      "psc_status": "PENDING",
+      "endpoint_ip": "10.20.0.10",
+      "backend_health": [
+        "HEALTHY"
+      ],
+      "nat_http_rule_disabled": false
+    },
+    "passed": true
+  },
+  {
+    "case": "accepted_ip",
+    "before": {
+      "utc": "2026-09-21T14:44:50.991991+00:00",
+      "psc_status": "ACCEPTED",
+      "endpoint_ip": "10.20.0.10",
+      "backend_health": [
+        "HEALTHY"
+      ],
+      "nat_http_rule_disabled": false
+    },
+    "probes": [
+      {
+        "utc": "2026-09-21T14:44:52.869776+00:00",
+        "attempt": 1,
+        "dns": {
+          "exit_code": 0,
+          "answer": ";; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 50616\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 512"
+        },
+        "ip": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 14.6,
+          "error": ""
+        },
+        "hostname": {
+          "exit_code": 6,
+          "http_status": "000",
+          "payload": null,
+          "elapsed_ms": 34.3,
+          "error": "curl: (6) Could not resolve host: hello.psc.test"
+        }
+      },
+      {
+        "utc": "2026-09-21T14:44:53.952079+00:00",
+        "attempt": 2,
+        "dns": {
+          "exit_code": 0,
+          "answer": ";; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 25561\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 512"
+        },
+        "ip": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 13.7,
+          "error": ""
+        },
+        "hostname": {
+          "exit_code": 6,
+          "http_status": "000",
+          "payload": null,
+          "elapsed_ms": 29.6,
+          "error": "curl: (6) Could not resolve host: hello.psc.test"
+        }
+      },
+      {
+        "utc": "2026-09-21T14:44:55.019484+00:00",
+        "attempt": 3,
+        "dns": {
+          "exit_code": 0,
+          "answer": ";; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 38872\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 512"
+        },
+        "ip": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 14.2,
+          "error": ""
+        },
+        "hostname": {
+          "exit_code": 6,
+          "http_status": "000",
+          "payload": null,
+          "elapsed_ms": 26.7,
+          "error": "curl: (6) Could not resolve host: hello.psc.test"
+        }
+      }
+    ],
+    "after": {
+      "utc": "2026-09-21T14:44:59.082697+00:00",
+      "psc_status": "ACCEPTED",
+      "endpoint_ip": "10.20.0.10",
+      "backend_health": [
+        "HEALTHY"
+      ],
+      "nat_http_rule_disabled": false
+    },
+    "passed": true
+  },
+  {
+    "case": "dns_ready",
+    "before": {
+      "utc": "2026-09-21T14:45:09.166549+00:00",
+      "psc_status": "ACCEPTED",
+      "endpoint_ip": "10.20.0.10",
+      "backend_health": [
+        "HEALTHY"
+      ],
+      "nat_http_rule_disabled": false
+    },
+    "probes": [
+      {
+        "utc": "2026-09-21T14:45:10.977827+00:00",
+        "attempt": 1,
+        "dns": {
+          "exit_code": 0,
+          "answer": ";; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 23224\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 512\n;; ANSWER SECTION:\nhello.psc.test.\t\t30\tIN\tA\t10.20.0.10"
+        },
+        "ip": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 17.8,
+          "error": ""
+        },
+        "hostname": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 36.2,
+          "error": ""
+        }
+      },
+      {
+        "utc": "2026-09-21T14:45:12.069180+00:00",
+        "attempt": 2,
+        "dns": {
+          "exit_code": 0,
+          "answer": ";; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 47791\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 512\n;; ANSWER SECTION:\nhello.psc.test.\t\t30\tIN\tA\t10.20.0.10"
+        },
+        "ip": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 15.8,
+          "error": ""
+        },
+        "hostname": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 36.0,
+          "error": ""
+        }
+      },
+      {
+        "utc": "2026-09-21T14:45:13.153909+00:00",
+        "attempt": 3,
+        "dns": {
+          "exit_code": 0,
+          "answer": ";; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 32865\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 512\n;; ANSWER SECTION:\nhello.psc.test.\t\t30\tIN\tA\t10.20.0.10"
+        },
+        "ip": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 13.7,
+          "error": ""
+        },
+        "hostname": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 28.2,
+          "error": ""
+        }
+      }
+    ],
+    "after": {
+      "utc": "2026-09-21T14:45:17.035591+00:00",
+      "psc_status": "ACCEPTED",
+      "endpoint_ip": "10.20.0.10",
+      "backend_health": [
+        "HEALTHY"
+      ],
+      "nat_http_rule_disabled": false
+    },
+    "passed": true
+  },
+  {
+    "case": "dns_removed",
+    "before": {
+      "utc": "2026-09-21T14:45:27.414546+00:00",
+      "psc_status": "ACCEPTED",
+      "endpoint_ip": "10.20.0.10",
+      "backend_health": [
+        "HEALTHY"
+      ],
+      "nat_http_rule_disabled": false
+    },
+    "probes": [
+      {
+        "utc": "2026-09-21T14:45:29.402033+00:00",
+        "attempt": 1,
+        "dns": {
+          "exit_code": 0,
+          "answer": ";; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 51012\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 512"
+        },
+        "ip": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 17.6,
+          "error": ""
+        },
+        "hostname": {
+          "exit_code": 6,
+          "http_status": "000",
+          "payload": null,
+          "elapsed_ms": 57.8,
+          "error": "curl: (6) Could not resolve host: hello.psc.test"
+        }
+      },
+      {
+        "utc": "2026-09-21T14:45:30.513390+00:00",
+        "attempt": 2,
+        "dns": {
+          "exit_code": 0,
+          "answer": ";; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 61720\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 512"
+        },
+        "ip": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 14.2,
+          "error": ""
+        },
+        "hostname": {
+          "exit_code": 6,
+          "http_status": "000",
+          "payload": null,
+          "elapsed_ms": 45.2,
+          "error": "curl: (6) Could not resolve host: hello.psc.test"
+        }
+      },
+      {
+        "utc": "2026-09-21T14:45:31.605243+00:00",
+        "attempt": 3,
+        "dns": {
+          "exit_code": 0,
+          "answer": ";; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 42960\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 512"
+        },
+        "ip": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 14.3,
+          "error": ""
+        },
+        "hostname": {
+          "exit_code": 6,
+          "http_status": "000",
+          "payload": null,
+          "elapsed_ms": 29.9,
+          "error": "curl: (6) Could not resolve host: hello.psc.test"
+        }
+      }
+    ],
+    "after": {
+      "utc": "2026-09-21T14:45:36.646184+00:00",
+      "psc_status": "ACCEPTED",
+      "endpoint_ip": "10.20.0.10",
+      "backend_health": [
+        "HEALTHY"
+      ],
+      "nat_http_rule_disabled": false
+    },
+    "passed": true
+  },
+  {
+    "case": "restored",
+    "before": {
+      "utc": "2026-09-21T14:45:46.752852+00:00",
+      "psc_status": "ACCEPTED",
+      "endpoint_ip": "10.20.0.10",
+      "backend_health": [
+        "HEALTHY"
+      ],
+      "nat_http_rule_disabled": false
+    },
+    "probes": [
+      {
+        "utc": "2026-09-21T14:45:48.822885+00:00",
+        "attempt": 1,
+        "dns": {
+          "exit_code": 0,
+          "answer": ";; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 37057\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 512\n;; ANSWER SECTION:\nhello.psc.test.\t\t30\tIN\tA\t10.20.0.10"
+        },
+        "ip": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 20.1,
+          "error": ""
+        },
+        "hostname": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 21.0,
+          "error": ""
+        }
+      },
+      {
+        "utc": "2026-09-21T14:45:49.904857+00:00",
+        "attempt": 2,
+        "dns": {
+          "exit_code": 0,
+          "answer": ";; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 46653\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 512\n;; ANSWER SECTION:\nhello.psc.test.\t\t30\tIN\tA\t10.20.0.10"
+        },
+        "ip": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 16.9,
+          "error": ""
+        },
+        "hostname": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 22.1,
+          "error": ""
+        }
+      },
+      {
+        "utc": "2026-09-21T14:45:50.986290+00:00",
+        "attempt": 3,
+        "dns": {
+          "exit_code": 0,
+          "answer": ";; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 19982\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 512\n;; ANSWER SECTION:\nhello.psc.test.\t\t30\tIN\tA\t10.20.0.10"
+        },
+        "ip": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 15.8,
+          "error": ""
+        },
+        "hostname": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 22.2,
+          "error": ""
+        }
+      }
+    ],
+    "after": {
+      "utc": "2026-09-21T14:45:55.078733+00:00",
+      "psc_status": "ACCEPTED",
+      "endpoint_ip": "10.20.0.10",
+      "backend_health": [
+        "HEALTHY"
+      ],
+      "nat_http_rule_disabled": false
+    },
+    "passed": true
+  },
+  {
+    "case": "firewall_disabled",
+    "before": {
+      "utc": "2026-09-21T14:46:14.472894+00:00",
+      "psc_status": "ACCEPTED",
+      "endpoint_ip": "10.20.0.10",
+      "backend_health": [
+        "HEALTHY"
+      ],
+      "nat_http_rule_disabled": true
+    },
+    "probes": [
+      {
+        "utc": "2026-09-21T14:46:16.596352+00:00",
+        "attempt": 1,
+        "dns": {
+          "exit_code": 0,
+          "answer": ";; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 3883\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 512\n;; ANSWER SECTION:\nhello.psc.test.\t\t30\tIN\tA\t10.20.0.10"
+        },
+        "ip": {
+          "exit_code": 28,
+          "http_status": "000",
+          "payload": null,
+          "elapsed_ms": 2013.2,
+          "error": "curl: (28) Failed to connect to 10.20.0.10 port 80 after 2001 ms: Timeout was reached"
+        },
+        "hostname": {
+          "exit_code": 28,
+          "http_status": "000",
+          "payload": null,
+          "elapsed_ms": 2014.8,
+          "error": "curl: (28) Failed to connect to hello.psc.test port 80 after 2001 ms: Timeout was reached"
+        }
+      },
+      {
+        "utc": "2026-09-21T14:46:21.655333+00:00",
+        "attempt": 2,
+        "dns": {
+          "exit_code": 0,
+          "answer": ";; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 6425\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 512\n;; ANSWER SECTION:\nhello.psc.test.\t\t30\tIN\tA\t10.20.0.10"
+        },
+        "ip": {
+          "exit_code": 28,
+          "http_status": "000",
+          "payload": null,
+          "elapsed_ms": 2012.6,
+          "error": "curl: (28) Failed to connect to 10.20.0.10 port 80 after 2001 ms: Timeout was reached"
+        },
+        "hostname": {
+          "exit_code": 28,
+          "http_status": "000",
+          "payload": null,
+          "elapsed_ms": 2014.5,
+          "error": "curl: (28) Failed to connect to hello.psc.test port 80 after 2001 ms: Timeout was reached"
+        }
+      },
+      {
+        "utc": "2026-09-21T14:46:26.715261+00:00",
+        "attempt": 3,
+        "dns": {
+          "exit_code": 0,
+          "answer": ";; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 35910\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 512\n;; ANSWER SECTION:\nhello.psc.test.\t\t30\tIN\tA\t10.20.0.10"
+        },
+        "ip": {
+          "exit_code": 28,
+          "http_status": "000",
+          "payload": null,
+          "elapsed_ms": 2012.6,
+          "error": "curl: (28) Failed to connect to 10.20.0.10 port 80 after 2001 ms: Timeout was reached"
+        },
+        "hostname": {
+          "exit_code": 28,
+          "http_status": "000",
+          "payload": null,
+          "elapsed_ms": 2012.0,
+          "error": "curl: (28) Failed to connect to hello.psc.test port 80 after 2001 ms: Timeout was reached"
+        }
+      }
+    ],
+    "after": {
+      "utc": "2026-09-21T14:46:34.861056+00:00",
+      "psc_status": "ACCEPTED",
+      "endpoint_ip": "10.20.0.10",
+      "backend_health": [
+        "HEALTHY"
+      ],
+      "nat_http_rule_disabled": true
+    },
+    "passed": true
+  },
+  {
+    "case": "restored",
+    "before": {
+      "utc": "2026-09-21T14:46:50.737889+00:00",
+      "psc_status": "ACCEPTED",
+      "endpoint_ip": "10.20.0.10",
+      "backend_health": [
+        "HEALTHY"
+      ],
+      "nat_http_rule_disabled": false
+    },
+    "probes": [
+      {
+        "utc": "2026-09-21T14:46:52.725397+00:00",
+        "attempt": 1,
+        "dns": {
+          "exit_code": 0,
+          "answer": ";; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 45393\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 512\n;; ANSWER SECTION:\nhello.psc.test.\t\t30\tIN\tA\t10.20.0.10"
+        },
+        "ip": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 14.3,
+          "error": ""
+        },
+        "hostname": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 21.6,
+          "error": ""
+        }
+      },
+      {
+        "utc": "2026-09-21T14:46:53.794857+00:00",
+        "attempt": 2,
+        "dns": {
+          "exit_code": 0,
+          "answer": ";; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 46601\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 512\n;; ANSWER SECTION:\nhello.psc.test.\t\t30\tIN\tA\t10.20.0.10"
+        },
+        "ip": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 13.2,
+          "error": ""
+        },
+        "hostname": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 20.2,
+          "error": ""
+        }
+      },
+      {
+        "utc": "2026-09-21T14:46:54.869418+00:00",
+        "attempt": 3,
+        "dns": {
+          "exit_code": 0,
+          "answer": ";; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 56692\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 512\n;; ANSWER SECTION:\nhello.psc.test.\t\t30\tIN\tA\t10.20.0.10"
+        },
+        "ip": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 16.2,
+          "error": ""
+        },
+        "hostname": {
+          "exit_code": 0,
+          "http_status": "200",
+          "payload": {
+            "message": "psc-lab-ok",
+            "peer_ip": "10.10.10.2"
+          },
+          "elapsed_ms": 23.3,
+          "error": ""
+        }
+      }
+    ],
+    "after": {
+      "utc": "2026-09-21T14:46:58.637919+00:00",
+      "psc_status": "ACCEPTED",
+      "endpoint_ip": "10.20.0.10",
+      "backend_health": [
+        "HEALTHY"
+      ],
+      "nat_http_rule_disabled": false
+    },
+    "passed": true
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "checked_utc": "2026-09-21T14:51:35.301669+00:00",
+  "manifest_resources_before": 23,
+  "manifest_resources_remaining": 0,
+  "cleanup_failures": [],
+  "prefix_inventory_empty": true,
+  "apis_disabled": false,
+  "note": "Dedicated resources removed; enabled APIs and provider audit/billing records retained."
+}
