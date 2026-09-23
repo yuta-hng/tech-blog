@@ -1,0 +1,202 @@
+{
+  "attempted": 500,
+  "valid_responses": 500,
+  "failed": 0,
+  "wall_seconds": 31.369994702999975,
+  "successful_requests_per_second": 15.938797718451129,
+  "error_rate": 0.0,
+  "accuracy": {
+    "department": {
+      "correct": 450,
+      "of_all_attempted": 0.9,
+      "of_valid_responses": 0.9
+    },
+    "severity": {
+      "correct": 400,
+      "of_all_attempted": 0.8,
+      "of_valid_responses": 0.8
+    },
+    "needsHuman": {
+      "correct": 410,
+      "of_all_attempted": 0.82,
+      "of_valid_responses": 0.82
+    }
+  },
+  "confusion": {
+    "department": {
+      "account": {
+        "account": 90,
+        "network": 10,
+        "device": 0,
+        "software": 0,
+        "other": 0
+      },
+      "network": {
+        "account": 0,
+        "network": 100,
+        "device": 0,
+        "software": 0,
+        "other": 0
+      },
+      "device": {
+        "account": 0,
+        "network": 0,
+        "device": 80,
+        "software": 10,
+        "other": 10
+      },
+      "software": {
+        "account": 0,
+        "network": 0,
+        "device": 0,
+        "software": 90,
+        "other": 10
+      },
+      "other": {
+        "account": 0,
+        "network": 0,
+        "device": 0,
+        "software": 10,
+        "other": 90
+      }
+    },
+    "severity": {
+      "0": {
+        "0": 160,
+        "1": 30,
+        "2": 0
+      },
+      "1": {
+        "0": 20,
+        "1": 120,
+        "2": 30
+      },
+      "2": {
+        "0": 10,
+        "1": 10,
+        "2": 120
+      }
+    },
+    "needsHuman": {
+      "False": {
+        "False": 110,
+        "True": 30
+      },
+      "True": {
+        "False": 60,
+        "True": 300
+      }
+    }
+  },
+  "all_three_correct": 290,
+  "all_three_accuracy_of_all_attempted": 0.58,
+  "human_required_missed": [
+    "S04",
+    "O08",
+    "O08",
+    "S04",
+    "A09",
+    "S09",
+    "A09",
+    "S09",
+    "O08",
+    "S09",
+    "D09",
+    "O06",
+    "D09",
+    "S04",
+    "D09",
+    "S04",
+    "S09",
+    "S04",
+    "D09",
+    "S04",
+    "S04",
+    "A09",
+    "S04",
+    "O08",
+    "O06",
+    "O06",
+    "O08",
+    "A09",
+    "O06",
+    "A09",
+    "A09",
+    "O06",
+    "A09",
+    "D09",
+    "S04",
+    "O08",
+    "O06",
+    "O08",
+    "O06",
+    "S04",
+    "D09",
+    "A09",
+    "O06",
+    "D09",
+    "A09",
+    "S09",
+    "D09",
+    "O06",
+    "S09",
+    "D09",
+    "S09",
+    "S09",
+    "O08",
+    "O06",
+    "O08",
+    "S09",
+    "A09",
+    "D09",
+    "O08",
+    "S09"
+  ],
+  "urgent_missed": [
+    "D10",
+    "N04",
+    "N04",
+    "D10",
+    "D10",
+    "N04",
+    "D10",
+    "N04",
+    "D10",
+    "N04",
+    "N04",
+    "N04",
+    "N04",
+    "D10",
+    "D10",
+    "D10",
+    "D10",
+    "N04",
+    "D10",
+    "N04"
+  ],
+  "human_required_recall_including_failed": 0.8333333333333334,
+  "urgent_recall_including_failed": 0.8571428571428571,
+  "severity_mae_valid": 0.19972904402546818,
+  "all_valid_summary": {
+    "n": 500,
+    "all_three_correct": 290
+  },
+  "tricky_valid_summary": {
+    "n": 110,
+    "all_three_correct": 20
+  },
+  "non_tricky_valid_summary": {
+    "n": 390,
+    "all_three_correct": 270
+  },
+  "client_ms": {
+    "n": 500,
+    "p50": 1966.0630329999549,
+    "p95": 2024.0894262001916
+  },
+  "server_ms": {
+    "n": 500,
+    "p50": 1950.7359266281128,
+    "p95": 1999.2782592773438
+  }
+}

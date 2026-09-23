@@ -1,0 +1,131 @@
+{
+  "attempted": 50,
+  "valid_responses": 50,
+  "failed": 0,
+  "wall_seconds": 4.108532608999894,
+  "successful_requests_per_second": 12.169795096787873,
+  "error_rate": 0.0,
+  "accuracy": {
+    "department": {
+      "correct": 44,
+      "of_all_attempted": 0.88,
+      "of_valid_responses": 0.88
+    },
+    "severity": {
+      "correct": 42,
+      "of_all_attempted": 0.84,
+      "of_valid_responses": 0.84
+    },
+    "needsHuman": {
+      "correct": 40,
+      "of_all_attempted": 0.8,
+      "of_valid_responses": 0.8
+    }
+  },
+  "confusion": {
+    "department": {
+      "account": {
+        "account": 9,
+        "network": 1,
+        "device": 0,
+        "software": 0,
+        "other": 0
+      },
+      "network": {
+        "account": 0,
+        "network": 10,
+        "device": 0,
+        "software": 0,
+        "other": 0
+      },
+      "device": {
+        "account": 0,
+        "network": 0,
+        "device": 8,
+        "software": 1,
+        "other": 1
+      },
+      "software": {
+        "account": 0,
+        "network": 0,
+        "device": 0,
+        "software": 8,
+        "other": 2
+      },
+      "other": {
+        "account": 0,
+        "network": 0,
+        "device": 0,
+        "software": 1,
+        "other": 9
+      }
+    },
+    "severity": {
+      "0": {
+        "0": 17,
+        "1": 2,
+        "2": 0
+      },
+      "1": {
+        "0": 1,
+        "1": 13,
+        "2": 3
+      },
+      "2": {
+        "0": 1,
+        "1": 1,
+        "2": 12
+      }
+    },
+    "needsHuman": {
+      "False": {
+        "False": 11,
+        "True": 3
+      },
+      "True": {
+        "False": 7,
+        "True": 29
+      }
+    }
+  },
+  "all_three_correct": 30,
+  "all_three_accuracy_of_all_attempted": 0.6,
+  "human_required_missed": [
+    "A09",
+    "O08",
+    "O06",
+    "S09",
+    "D09",
+    "N08",
+    "S04"
+  ],
+  "urgent_missed": [
+    "D10",
+    "N04"
+  ],
+  "human_required_recall_including_failed": 0.8055555555555556,
+  "urgent_recall_including_failed": 0.8571428571428571,
+  "severity_mae_valid": 0.19135410451863888,
+  "all_valid_summary": {
+    "n": 50,
+    "all_three_correct": 30
+  },
+  "tricky_valid_summary": {
+    "n": 11,
+    "all_three_correct": 2
+  },
+  "non_tricky_valid_summary": {
+    "n": 39,
+    "all_three_correct": 28
+  },
+  "client_ms": {
+    "n": 50,
+    "p50": 71.18938099995376,
+    "p95": 89.16550760005748
+  },
+  "server_ms": {
+    "n": 50,
+    "p50": 61.211466789245605,
+    "p95": 77.50887870788573
+  }
+}

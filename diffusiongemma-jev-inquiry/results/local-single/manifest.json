@@ -1,0 +1,46 @@
+{
+  "started_at_utc": "2026-09-23T08:29:08.610978+00:00",
+  "dataset_sha256": "98c932400b10772cb03ee886f8fef7ef477767c7e71e967e561b41356ceb17a5",
+  "url": "https://YOUR_CLOUD_RUN_SERVICE_URL",
+  "client_location": "Local PC; physical location and VPN use not confirmed",
+  "samples": 1,
+  "steps": 1,
+  "concurrency": 1,
+  "repeats": 1,
+  "seed": 42,
+  "shuffle_seed": 20260923,
+  "input": "state is inquiry text only; no id, labels, note, or tricky",
+  "boolean_wire_type": "noul",
+  "severity_class": "argmax(probabilities), first level on tie",
+  "boolean_rule": "P(true) >= 0.5",
+  "retries": 0,
+  "timing": "token acquired before timing; HTTPS connection reused per worker when possible; warmup excluded",
+  "server_timing": "diagnostics.timing.total_ms, not Cloud Monitoring nor pure GPU time",
+  "questions": {
+    "department": {
+      "type": "choice",
+      "instructions": "この問い合わせはどの担当が対応すべきか。",
+      "criteria": {
+        "account": "アカウント・権限（ログイン、パスワード、多要素認証、アクセス権、メールボックスや表示名の設定）",
+        "network": "ネットワーク（有線LAN、Wi-Fi、VPN接続、プロキシ、DNS、インターネット接続）",
+        "device": "PC・周辺機器（PC本体の故障、モニター、マウス、キーボード、複合機、貸与スマホ、機器の貸出）",
+        "software": "ソフトウェア・業務システム（Office、Teams、ブラウザ、業務システムの不具合や操作、ソフトのインストール）",
+        "other": "その他（セキュリティインシデントの報告、社内ルールの確認、手続き、IT部門以外の案件）"
+      }
+    },
+    "severity": {
+      "type": "score",
+      "instructions": "この問い合わせの緊急度はどの程度か。",
+      "criteria": [
+        "急ぎではない（業務影響なし、または予定された依頼）",
+        "早めの対応が必要（回避策があるが業務に一部影響）",
+        "至急（業務が止まっている、回避策がない、またはセキュリティ・安全上のリスクがある）"
+      ]
+    },
+    "needsHuman": {
+      "type": "boolean",
+      "instructions": "ヘルプデスク担当者による作業（設定変更、権限付与、現地対応、調査、手配）が必要か。手順書やFAQを案内すれば本人が解決できる場合はfalse。"
+    }
+  },
+  "publication_redactions": "Service URL replaced with a placeholder; local PC hostname removed. Measurement values and model responses are unchanged."
+}

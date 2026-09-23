@@ -1,0 +1,154 @@
+{
+  "index": -1,
+  "id": "A01",
+  "gold": {
+    "department": "account",
+    "severity": 2,
+    "needsHuman": true
+  },
+  "tricky": false,
+  "started_at_utc": "2026-09-23T08:27:36.130759+00:00",
+  "valid": true,
+  "client_ms": 123.20955700010927,
+  "status": 200,
+  "raw_response": {
+    "model": "dgemma",
+    "answers": {
+      "department": {
+        "type": "choice",
+        "choice": "account",
+        "probabilities": {
+          "account": 0.9983055727933431,
+          "network": 0.00023048426506408704,
+          "device": 1.691276467608177e-05,
+          "software": 0.000535642374075087,
+          "other": 0.000911387802841595
+        },
+        "confidence": 0.9983055727933431
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.9996522666648437,
+        "legend": {
+          "0": "急ぎではない（業務影響なし、または予定された依頼）",
+          "1": "早めの対応が必要（回避策があるが業務に一部影響）",
+          "2": "至急（業務が止まっている、回避策がない、またはセキュリティ・安全上のリスクがある）"
+        },
+        "probabilities": {
+          "0": 0.00013115032962119076,
+          "1": 8.543267591388135e-05,
+          "2": 0.9997834169944649
+        },
+        "confidence": 0.9997834169944649
+      },
+      "needsHuman": {
+        "type": "noul",
+        "noul": 0.9995453569117444
+      }
+    },
+    "usage": {
+      "input_tokens": 468,
+      "output_tokens": 18
+    },
+    "diagnostics": {
+      "steps": 1,
+      "stages": [
+        [
+          "department",
+          "severity",
+          "needsHuman"
+        ]
+      ],
+      "skipped": {},
+      "chunks": [
+        [
+          "department",
+          "severity",
+          "needsHuman"
+        ]
+      ],
+      "chunk_prompt": "own",
+      "sequential": false,
+      "conditioning": null,
+      "thought": null,
+      "samples": {
+        "n": 1,
+        "tops": [
+          {
+            "department": [
+              "A",
+              0.9983055727933431,
+              0.016909069229309178
+            ],
+            "severity": [
+              "3",
+              0.9997834169944649,
+              0.002422610297131615
+            ],
+            "needsHuman": [
+              "yes",
+              0.9995453569117444,
+              0.014184622317828698
+            ]
+          }
+        ],
+        "policy": {
+          "mode": "fixed",
+          "n": 1,
+          "extended": null,
+          "first_read_entropy": null
+        }
+      },
+      "timing": {
+        "total_ms": 58.65740776062012,
+        "reads": 1
+      },
+      "prompt_tokens": 468,
+      "questions": {
+        "department": {
+          "pos": 6,
+          "entropy": [
+            0.016909069229309178
+          ],
+          "label_mass": 0.9997309982871164,
+          "argmax_is_label": true
+        },
+        "severity": {
+          "pos": 11,
+          "entropy": [
+            0.002422610297131615
+          ],
+          "label_mass": 0.9999811959998025,
+          "argmax_is_label": true
+        },
+        "needsHuman": {
+          "pos": 16,
+          "entropy": [
+            0.014184622317828698
+          ],
+          "label_mass": 0.9988664006631123,
+          "argmax_is_label": true
+        }
+      },
+      "engine": "vllm"
+    }
+  },
+  "prediction": {
+    "department": "account",
+    "severity": 2,
+    "needsHuman": true
+  },
+  "confidence": {
+    "department": 0.9983055727933431,
+    "severity": 0.9997834169944649,
+    "needsHuman": 0.9995453569117444
+  },
+  "severity_expected_score": 1.9996522666648437,
+  "needsHuman_probability": 0.9995453569117444,
+  "ties": {
+    "department": false,
+    "severity": false,
+    "needsHuman": false
+  },
+  "server_ms": 58.65740776062012
+}
